@@ -1,0 +1,5 @@
+,and,or,not,%correct
+and,193,46,3,=B2*100/SUM(B2:D2)
+or,14,83,5,=C3*100/SUM(B3:D3)
+not,2,17,68,=D4*100/SUM(B4:D4)
+,,,,=(B2+C3+D4)*100/SUM(B2:D4)

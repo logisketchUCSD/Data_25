@@ -1,0 +1,20 @@
+Wire, Text, Other.
+
+ArcLength: continuous.
+AverageSpeed: continuous.
+MaximumSpeed: continuous.
+SumTheta: continuous.
+SumAbsTheta: continuous.
+SumSquaredTheta: continuous.
+SumSqrtTheta: continuous.
+PathDensity: continuous.
+Width: continuous.
+Height: continuous.
+Area: continuous.
+SelfEnclosingShape: 0, 1.
+NumSelfIntersections: continuous.
+NumLIntersections: continuous.
+NumTIntersections_teeing: continuous.
+NumTIntersections_into: continuous.
+NumXIntersections: continuous.
+ClosedShapeConnections: 0, 1.

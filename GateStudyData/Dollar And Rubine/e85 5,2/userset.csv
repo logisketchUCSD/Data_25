@@ -1,0 +1,5 @@
+,and,or,not,%correct
+and,834,124,10,=B2*100/SUM(B2:D2)
+or,63,328,17,=C3*100/SUM(B3:D3)
+not,8,70,270,=D4*100/SUM(B4:D4)
+,,,,=(B2+C3+D4)*100/SUM(B2:D4)

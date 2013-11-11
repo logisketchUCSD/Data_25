@@ -1,0 +1,35 @@
+Wire, Text, Other.
+
+arcLengthLong: 0, 1.
+arcLengthShort: 0, 1.
+biasFunction: 0, 1.
+distBetweenEndsLarge: 0, 1.
+distBetweenEndsSmall: 0, 1.
+distFromLR: continuous.
+distFromTB: continuous.
+MSbiasFunction: 0, 1.
+numAngleLarge: continuous.
+numAngleSmall: continuous.
+numAreParallel: continuous.
+numArePerpendicular: continuous.
+numCorners: continuous.
+numCurvedCurved: continuous.
+numCurvedStraight: continuous.
+numDistAvgPtsLarge: continuous.
+numDistAvgPtsSmall: continuous.
+numEndsClose: continuous.
+numMaxDistLarge: continuous.
+numMaxDistSmall: continuous.
+numMinDistEndsLarge: continuous.
+numMinDistLarge: continuous.
+numMinDistSmall: continuous.
+numPenLifted: continuous.
+numSimilarlyBounded: continuous.
+numStraightCurved: continuous.
+numStraightStraight: continuous.
+numTouching: continuous.
+turning360: 0, 1.
+turningLarge: 0, 1.
+turningSmall: 0, 1.
+turningZero: 0, 1.
+twoCorners: 0, 1.

@@ -1,0 +1,1438 @@
+
+C4.5 [release 8] decision tree generator	Wed Jul 23 12:49:42 2008
+----------------------------------------
+
+    Options:
+	File stem <crf>
+	Trees evaluated on unseen cases
+
+Read 3862 cases (33 attributes) from crf.data
+
+Decision Tree:
+
+distFromLR <= 0.974468 :
+|   numMinDistSmall <= 1.04893 :
+|   |   distFromTB <= 0.976898 :
+|   |   |   numDistAvgPtsLarge > 68.7253 : Text (11.0/1.0)
+|   |   |   numDistAvgPtsLarge <= 68.7253 :
+|   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   numDistAvgPtsSmall <= 0.893119 :
+|   |   |   |   |   |   numSimilarlyBounded <= 0 :
+|   |   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   |   distBetweenEndsLarge = 1: Wire (61.0/1.0)
+|   |   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   |   turningZero = 1: Wire (4.0)
+|   |   |   |   |   |   |   |   |   turningZero = 0:
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 0.985829 : Text (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 0.985829 : Wire (7.0/1.0)
+|   |   |   |   |   |   |   arcLengthShort = 1:
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.220458 : Other (4.0)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 0.220458 : Wire (2.0)
+|   |   |   |   |   |   numSimilarlyBounded > 0 :
+|   |   |   |   |   |   |   numEndsClose > 0 : Other (3.0)
+|   |   |   |   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   |   |   |   numTouching <= 0.0173604 : Other (9.0/1.0)
+|   |   |   |   |   |   |   |   numTouching > 0.0173604 :
+|   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   |   |   numAreParallel <= 11.4492 : Wire (2.0)
+|   |   |   |   |   |   |   |   |   |   numAreParallel > 11.4492 : Other (5.0)
+|   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge <= 1.72736 : Other (4.0)
+|   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge > 1.72736 :
+|   |   |   |   |   |   |   |   |   |   |   arcLengthLong = 1: Wire (3.0)
+|   |   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:[S1]
+|   |   |   |   |   numDistAvgPtsSmall > 0.893119 :
+|   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   distFromTB <= -0.899153 : Other (5.0)
+|   |   |   |   |   |   |   distFromTB > -0.899153 : Text (9.0/1.0)
+|   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   distFromTB <= 0.971979 :
+|   |   |   |   |   |   |   |   numMinDistSmall > 1.04271 : Wire (2.0)
+|   |   |   |   |   |   |   |   numMinDistSmall <= 1.04271 :
+|   |   |   |   |   |   |   |   |   numCurvedStraight <= 18 : Other (11.0)
+|   |   |   |   |   |   |   |   |   numCurvedStraight > 18 :
+|   |   |   |   |   |   |   |   |   |   numAngleSmall <= 0.465409 : Wire (2.0)
+|   |   |   |   |   |   |   |   |   |   numAngleSmall > 0.465409 : Other (2.0)
+|   |   |   |   |   |   |   distFromTB > 0.971979 :
+|   |   |   |   |   |   |   |   numArePerpendicular <= 19.8426 : Text (5.0)
+|   |   |   |   |   |   |   |   numArePerpendicular > 19.8426 : Other (2.0)
+|   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   numCurvedCurved <= 30 : Other (14.0/1.0)
+|   |   |   |   |   numCurvedCurved > 30 : Text (5.0)
+|   |   distFromTB > 0.976898 :
+|   |   |   numMinDistLarge > 81.2165 : Other (3.0)
+|   |   |   numMinDistLarge <= 81.2165 :
+|   |   |   |   distBetweenEndsLarge = 0: Text (39.0)
+|   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   numDistAvgPtsSmall <= 0.0827938 : Wire (2.0)
+|   |   |   |   |   numDistAvgPtsSmall > 0.0827938 : Text (12.0)
+|   numMinDistSmall > 1.04893 :
+|   |   numEndsClose <= 0 :
+|   |   |   numMaxDistSmall <= 15.7433 :
+|   |   |   |   numSimilarlyBounded <= 0 :
+|   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   distFromTB <= 0.976023 :
+|   |   |   |   |   |   |   numMinDistSmall <= 3.07672 :
+|   |   |   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   |   |   arcLengthLong = 1: Wire (83.0)
+|   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   numAreParallel > 14.766 : Wire (145.0)
+|   |   |   |   |   |   |   |   |   |   numAreParallel <= 14.766 :
+|   |   |   |   |   |   |   |   |   |   |   turningZero = 0: Wire (24.0)
+|   |   |   |   |   |   |   |   |   |   |   turningZero = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   numPenLifted > 0 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   numPenLifted <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 32 :[S2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   numCurvedCurved > 32 :[S3]
+|   |   |   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   |   |   numTouching <= 0.996241 :
+|   |   |   |   |   |   |   |   |   |   numDistAvgPtsSmall > 0.507691 : Other (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.507691 :[S4]
+|   |   |   |   |   |   |   |   |   numTouching > 0.996241 :
+|   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 26 : Wire (81.0)
+|   |   |   |   |   |   |   |   |   |   numCurvedCurved > 26 :
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.09913 : Wire (29.0)
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.09913 :[S5]
+|   |   |   |   |   |   |   numMinDistSmall > 3.07672 :
+|   |   |   |   |   |   |   |   arcLengthLong = 1: Wire (50.0/1.0)
+|   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   numStraightCurved > 40 : Wire (8.0)
+|   |   |   |   |   |   |   |   |   numStraightCurved <= 40 :
+|   |   |   |   |   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   |   |   |   |   numCorners <= 0.170817 : Wire (11.0)
+|   |   |   |   |   |   |   |   |   |   |   numCorners > 0.170817 :[S6]
+|   |   |   |   |   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge <= 30.5672 : Wire (2.0)
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge > 30.5672 :
+|   |   |   |   |   |   |   |   |   |   |   |   numCorners > 0.110053 : Other (18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   numCorners <= 0.110053 :[S7]
+|   |   |   |   |   |   distFromTB > 0.976023 :
+|   |   |   |   |   |   |   numCurvedStraight <= 12 : Text (7.0/1.0)
+|   |   |   |   |   |   |   numCurvedStraight > 12 : Wire (14.0)
+|   |   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   |   numCorners <= 0.0324837 : Other (73.0/1.0)
+|   |   |   |   |   |   numCorners > 0.0324837 :
+|   |   |   |   |   |   |   numMinDistSmall > 2.05479 : Other (11.0)
+|   |   |   |   |   |   |   numMinDistSmall <= 2.05479 :
+|   |   |   |   |   |   |   |   distFromLR <= -0.47055 : Other (4.0/1.0)
+|   |   |   |   |   |   |   |   distFromLR > -0.47055 : Wire (6.0)
+|   |   |   |   numSimilarlyBounded > 0 :
+|   |   |   |   |   numAngleSmall <= 2.95266 :
+|   |   |   |   |   |   numDistAvgPtsSmall <= 0.225328 :
+|   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   numAreParallel <= 7.35366 :
+|   |   |   |   |   |   |   |   |   distFromLR <= -0.854545 :
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   |   numCurvedCurved > 34 : Wire (4.0)
+|   |   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 34 :[S8]
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 1:[S9]
+|   |   |   |   |   |   |   |   |   distFromLR > -0.854545 :
+|   |   |   |   |   |   |   |   |   |   turning360 = 0:[S10]
+|   |   |   |   |   |   |   |   |   |   turning360 = 1:
+|   |   |   |   |   |   |   |   |   |   |   distFromLR <= 0.955014 : Other (2.0)
+|   |   |   |   |   |   |   |   |   |   |   distFromLR > 0.955014 : Wire (2.0)
+|   |   |   |   |   |   |   |   numAreParallel > 7.35366 :
+|   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.74944 : Other (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.74944 :[S11]
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 1:
+|   |   |   |   |   |   |   |   |   |   |   numStraightCurved > 37 : Wire (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   numStraightCurved <= 37 :
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 0: Other (67.0)
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 1:[S12]
+|   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   |   |   |   |   |   distFromLR <= -0.932434 : Other (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   distFromLR > -0.932434 :
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge <= 22.6147 : Other (3.0)
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge > 22.6147 :[S13]
+|   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   numMaxDistLarge <= 23.2395 : Wire (46.0)
+|   |   |   |   |   |   |   |   numMaxDistLarge > 23.2395 :
+|   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.04822 :
+|   |   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge <= 2.8753 :[S14]
+|   |   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge > 2.8753 :
+|   |   |   |   |   |   |   |   |   |   |   |   numSimilarlyBounded <= 1 :[S15]
+|   |   |   |   |   |   |   |   |   |   |   |   numSimilarlyBounded > 1 :[S16]
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.04822 :
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular <= 8.65143 :[S17]
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular > 8.65143 :
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 0:[S18]
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 1:[S19]
+|   |   |   |   |   |   |   |   |   arcLengthLong = 1:
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall <= 6.59715 :
+|   |   |   |   |   |   |   |   |   |   |   numCorners > 0.170817 : Other (7.0)
+|   |   |   |   |   |   |   |   |   |   |   numCorners <= 0.170817 :
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 0:[S20]
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 1:[S21]
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall > 6.59715 :
+|   |   |   |   |   |   |   |   |   |   |   numPenLifted <= 0 : Wire (65.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   numPenLifted > 0 :[S22]
+|   |   |   |   |   |   numDistAvgPtsSmall > 0.225328 :
+|   |   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   |   distFromTB <= 0.970569 :
+|   |   |   |   |   |   |   |   |   numTouching <= 2.97626 :
+|   |   |   |   |   |   |   |   |   |   numPenLifted > 0 : Other (34.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numPenLifted <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   numAreParallel <= 5.31943 :[S23]
+|   |   |   |   |   |   |   |   |   |   |   |   |   numAreParallel > 5.31943 :[S24]
+|   |   |   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 21 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 0:[S25]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 1:[S26]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   numCurvedCurved > 21 :[S27]
+|   |   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 1:[S28]
+|   |   |   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 1: Wire (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.90831 :[S29]
+|   |   |   |   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.90831 :[S30]
+|   |   |   |   |   |   |   |   |   numTouching > 2.97626 :
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:[S31]
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 1:[S32]
+|   |   |   |   |   |   |   |   distFromTB > 0.970569 :
+|   |   |   |   |   |   |   |   |   distFromLR <= 0.969258 :
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 1.99345 :
+|   |   |   |   |   |   |   |   |   |   |   distFromTB <= 0.978172 : Other (7.0)
+|   |   |   |   |   |   |   |   |   |   |   distFromTB > 0.978172 : Text (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 1.99345 :[S33]
+|   |   |   |   |   |   |   |   |   distFromLR > 0.969258 :
+|   |   |   |   |   |   |   |   |   |   numAngleLarge <= 0.0987839 : Text (5.0)
+|   |   |   |   |   |   |   |   |   |   numAngleLarge > 0.0987839 : Wire (4.0)
+|   |   |   |   |   |   |   arcLengthShort = 1:
+|   |   |   |   |   |   |   |   numMaxDistSmall > 13.4157 : Other (6.0)
+|   |   |   |   |   |   |   |   numMaxDistSmall <= 13.4157 :
+|   |   |   |   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 1: Other (2.0)
+|   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular <= 10.9123 :[S34]
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular > 10.9123 :
+|   |   |   |   |   |   |   |   |   |   |   |   distFromLR <= -0.977583 : Other (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   distFromLR > -0.977583 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   turningZero = 0: Wire (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   turningZero = 1:[S35]
+|   |   |   |   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   |   |   |   distFromLR > -0.917808 : Other (5.0)
+|   |   |   |   |   |   |   |   |   |   distFromLR <= -0.917808 :
+|   |   |   |   |   |   |   |   |   |   |   numAngleSmall <= 1.40887 : Wire (5.0)
+|   |   |   |   |   |   |   |   |   |   |   numAngleSmall > 1.40887 : Other (2.0)
+|   |   |   |   |   numAngleSmall > 2.95266 :
+|   |   |   |   |   |   numDistAvgPtsSmall <= 2.58922 :
+|   |   |   |   |   |   |   distFromTB <= 0.975509 : Wire (16.0)
+|   |   |   |   |   |   |   distFromTB > 0.975509 : Other (2.0)
+|   |   |   |   |   |   numDistAvgPtsSmall > 2.58922 :
+|   |   |   |   |   |   |   numCurvedCurved <= 37 : Text (7.0)
+|   |   |   |   |   |   |   numCurvedCurved > 37 : Wire (2.0/1.0)
+|   |   |   numMaxDistSmall > 15.7433 :
+|   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   numArePerpendicular <= 6.88126 : Wire (4.0)
+|   |   |   |   |   |   numArePerpendicular > 6.88126 : Other (4.0)
+|   |   |   |   |   arcLengthLong = 1:
+|   |   |   |   |   |   numCurvedCurved <= 37 : Wire (350.0/1.0)
+|   |   |   |   |   |   numCurvedCurved > 37 :
+|   |   |   |   |   |   |   numCurvedCurved > 43 : Wire (7.0)
+|   |   |   |   |   |   |   numCurvedCurved <= 43 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.402328 : Wire (7.0/1.0)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 0.402328 : Other (4.0)
+|   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   numStraightStraight <= 16 : Other (28.0)
+|   |   |   |   |   numStraightStraight > 16 :
+|   |   |   |   |   |   numAngleSmall <= 2.07961 : Wire (6.0)
+|   |   |   |   |   |   numAngleSmall > 2.07961 : Other (2.0)
+|   |   numEndsClose > 0 :
+|   |   |   distBetweenEndsSmall = 1: Wire (5.0/1.0)
+|   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   numSimilarlyBounded <= 3 :
+|   |   |   |   |   numMinDistEndsLarge > 2.05709 : Other (101.0)
+|   |   |   |   |   numMinDistEndsLarge <= 2.05709 :
+|   |   |   |   |   |   numAngleSmall <= 0.465409 : Other (2.0)
+|   |   |   |   |   |   numAngleSmall > 0.465409 : Wire (2.0)
+|   |   |   |   numSimilarlyBounded > 3 :
+|   |   |   |   |   numAngleSmall <= 3.31583 : Other (6.0)
+|   |   |   |   |   numAngleSmall > 3.31583 : Text (2.0)
+distFromLR > 0.974468 :
+|   numMaxDistSmall <= 12.3569 :
+|   |   numMinDistSmall <= 1.99572 :
+|   |   |   numMaxDistLarge <= 65.8334 :
+|   |   |   |   distFromLR <= 0.975483 :
+|   |   |   |   |   numMaxDistSmall <= 2.35506 : Wire (6.0)
+|   |   |   |   |   numMaxDistSmall > 2.35506 :
+|   |   |   |   |   |   numMaxDistSmall <= 6.92102 : Text (10.0)
+|   |   |   |   |   |   numMaxDistSmall > 6.92102 : Other (2.0)
+|   |   |   |   distFromLR > 0.975483 :
+|   |   |   |   |   numMinDistSmall <= 1.02581 : Text (241.0/3.0)
+|   |   |   |   |   numMinDistSmall > 1.02581 :
+|   |   |   |   |   |   numEndsClose > 0 : Other (5.0/1.0)
+|   |   |   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.0998897 :
+|   |   |   |   |   |   |   |   numMaxDistLarge <= 43.0686 : Text (2.0/1.0)
+|   |   |   |   |   |   |   |   numMaxDistLarge > 43.0686 : Wire (5.0)
+|   |   |   |   |   |   |   numDistAvgPtsSmall > 0.0998897 :
+|   |   |   |   |   |   |   |   numStraightStraight <= 25 :
+|   |   |   |   |   |   |   |   |   numStraightCurved <= 24 :
+|   |   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 0: Text (50.0)
+|   |   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 1:[S36]
+|   |   |   |   |   |   |   |   |   numStraightCurved > 24 :
+|   |   |   |   |   |   |   |   |   |   numSimilarlyBounded <= 1 : Text (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numSimilarlyBounded > 1 :
+|   |   |   |   |   |   |   |   |   |   |   distFromLR <= 0.977894 : Text (3.0)
+|   |   |   |   |   |   |   |   |   |   |   distFromLR > 0.977894 : Other (3.0)
+|   |   |   |   |   |   |   |   numStraightStraight > 25 :
+|   |   |   |   |   |   |   |   |   arcLengthShort = 1: Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   |   |   |   distFromLR <= 0.977819 : Text (4.0)
+|   |   |   |   |   |   |   |   |   |   distFromLR > 0.977819 : Other (4.0)
+|   |   |   numMaxDistLarge > 65.8334 :
+|   |   |   |   distBetweenEndsLarge = 1: Text (5.0/1.0)
+|   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   numAngleLarge <= 0.0717759 : Other (7.0)
+|   |   |   |   |   numAngleLarge > 0.0717759 : Text (2.0)
+|   |   numMinDistSmall > 1.99572 :
+|   |   |   numDistAvgPtsSmall <= 0.417562 :
+|   |   |   |   numEndsClose > 0 : Other (2.0)
+|   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   numDistAvgPtsLarge > 68.6401 : Other (2.0)
+|   |   |   |   |   numDistAvgPtsLarge <= 68.6401 :
+|   |   |   |   |   |   turningSmall = 0: Wire (17.0)
+|   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   distFromLR <= 0.97812 : Wire (7.0)
+|   |   |   |   |   |   |   distFromLR > 0.97812 : Other (2.0)
+|   |   |   numDistAvgPtsSmall > 0.417562 :
+|   |   |   |   arcLengthLong = 1: Other (12.0/1.0)
+|   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   numDistAvgPtsLarge <= 52.8708 :
+|   |   |   |   |   |   numEndsClose > 0 : Other (4.0/1.0)
+|   |   |   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   |   |   numCurvedCurved <= 26 : Text (37.0/1.0)
+|   |   |   |   |   |   |   numCurvedCurved > 26 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 1.95245 : Wire (2.0)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 1.95245 :
+|   |   |   |   |   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall <= 7.80679 : Text (10.0)
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall > 7.80679 : Other (3.0)
+|   |   |   |   |   |   |   |   |   turningLarge = 1:
+|   |   |   |   |   |   |   |   |   |   numAngleLarge <= 0.024162 : Other (2.0)
+|   |   |   |   |   |   |   |   |   |   numAngleLarge > 0.024162 : Wire (2.0/1.0)
+|   |   |   |   |   numDistAvgPtsLarge > 52.8708 :
+|   |   |   |   |   |   arcLengthShort = 1: Text (5.0/1.0)
+|   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   distFromLR > 0.977875 : Other (39.0/1.0)
+|   |   |   |   |   |   |   distFromLR <= 0.977875 :
+|   |   |   |   |   |   |   |   numMinDistSmall <= 2.04911 : Text (9.0)
+|   |   |   |   |   |   |   |   numMinDistSmall > 2.04911 :
+|   |   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 2.98066 : Other (8.0)
+|   |   |   |   |   |   |   |   |   numDistAvgPtsSmall > 2.98066 :
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.99422 : Text (5.0)
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.99422 : Other (2.0)
+|   numMaxDistSmall > 12.3569 :
+|   |   distBetweenEndsSmall = 1: Other (3.0)
+|   |   distBetweenEndsSmall = 0:
+|   |   |   distBetweenEndsLarge = 1: Wire (49.0)
+|   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   distFromLR <= 0.978008 : Wire (4.0)
+|   |   |   |   distFromLR > 0.978008 : Other (3.0)
+
+
+Subtree [S1]
+
+numArePerpendicular > 19.173 : Other (2.0)
+numArePerpendicular <= 19.173 :
+|   arcLengthShort = 0: Wire (15.0/1.0)
+|   arcLengthShort = 1:
+|   |   distFromTB <= -0.309761 : Wire (2.0)
+|   |   distFromTB > -0.309761 : Other (3.0/1.0)
+
+
+Subtree [S2]
+
+numDistAvgPtsSmall > 0.0737421 : Wire (37.0/1.0)
+numDistAvgPtsSmall <= 0.0737421 :
+|   numMinDistSmall <= 2.0565 : Wire (9.0)
+|   numMinDistSmall > 2.0565 : Other (3.0)
+
+
+Subtree [S3]
+
+numCorners <= 0.998741 : Wire (2.0)
+numCorners > 0.998741 : Other (3.0)
+
+
+Subtree [S4]
+
+numMinDistEndsLarge <= 1.552 : Other (2.0)
+numMinDistEndsLarge > 1.552 : Wire (26.0/2.0)
+
+
+Subtree [S5]
+
+numAngleSmall <= 0.788955 : Other (5.0)
+numAngleSmall > 0.788955 : Wire (12.0/1.0)
+
+
+Subtree [S6]
+
+numMaxDistSmall <= 5.95934 : Wire (5.0)
+numMaxDistSmall > 5.95934 :
+|   numAngleSmall <= 0.968478 : Other (11.0)
+|   numAngleSmall > 0.968478 : Wire (3.0/1.0)
+
+
+Subtree [S7]
+
+numCorners <= 0.03976 : Other (4.0)
+numCorners > 0.03976 : Wire (4.0/1.0)
+
+
+Subtree [S8]
+
+numCurvedStraight > 23 : Wire (2.0)
+numCurvedStraight <= 23 :
+|   turningLarge = 1: Other (6.0)
+|   turningLarge = 0:
+|   |   numMinDistEndsLarge > 3.82282 : Other (13.0)
+|   |   numMinDistEndsLarge <= 3.82282 :
+|   |   |   numCorners <= 0.0128729 : Other (6.0)
+|   |   |   numCorners > 0.0128729 :
+|   |   |   |   numDistAvgPtsLarge <= 40.2574 : Wire (6.0)
+|   |   |   |   numDistAvgPtsLarge > 40.2574 : Other (2.0)
+
+
+Subtree [S9]
+
+distBetweenEndsSmall = 0: Wire (14.0/1.0)
+distBetweenEndsSmall = 1: Other (3.0/1.0)
+
+
+Subtree [S10]
+
+numSimilarlyBounded > 1 : Wire (29.0)
+numSimilarlyBounded <= 1 :
+|   turningZero = 1: Wire (6.0)
+|   turningZero = 0:
+|   |   arcLengthLong = 0: Wire (10.0/1.0)
+|   |   arcLengthLong = 1:
+|   |   |   numAngleLarge <= 0.583463 : Other (3.0)
+|   |   |   numAngleLarge > 0.583463 : Wire (3.0)
+
+
+Subtree [S11]
+
+numMinDistEndsLarge > 3.18418 : Wire (5.0)
+numMinDistEndsLarge <= 3.18418 :
+|   numAngleLarge <= 0.897824 : Other (8.0)
+|   numAngleLarge > 0.897824 : Wire (2.0)
+
+
+Subtree [S12]
+
+numAngleSmall <= 1.88936 : Other (16.0/1.0)
+numAngleSmall > 1.88936 : Wire (3.0)
+
+
+Subtree [S13]
+
+numCurvedCurved > 43 : Other (2.0)
+numCurvedCurved <= 43 :
+|   numCorners <= 0.0127063 : Other (3.0/1.0)
+|   numCorners > 0.0127063 : Wire (24.0)
+
+
+Subtree [S14]
+
+numSimilarlyBounded > 2 : Wire (2.0)
+numSimilarlyBounded <= 2 :
+|   numArePerpendicular <= 5.92669 : Other (7.0)
+|   numArePerpendicular > 5.92669 :
+|   |   distFromLR <= -0.957614 : Other (10.0/2.0)
+|   |   distFromLR > -0.957614 :
+|   |   |   numAngleSmall > 0.0341948 : Wire (9.0)
+|   |   |   numAngleSmall <= 0.0341948 :
+|   |   |   |   numAngleLarge > 0.0213189 : Other (2.0)
+|   |   |   |   numAngleLarge <= 0.0213189 :
+|   |   |   |   |   distFromLR <= 0.73001 : Other (2.0)
+|   |   |   |   |   distFromLR > 0.73001 : Wire (4.0)
+
+
+Subtree [S15]
+
+numMinDistSmall <= 2.01884 : Wire (37.0)
+numMinDistSmall > 2.01884 :
+|   numAngleLarge <= 0.0354688 : Other (2.0)
+|   numAngleLarge > 0.0354688 : Wire (5.0/1.0)
+
+
+Subtree [S16]
+
+numCurvedCurved > 27 : Wire (10.0)
+numCurvedCurved <= 27 :
+|   distFromTB > 0.209424 : Other (3.0)
+|   distFromTB <= 0.209424 :
+|   |   turningSmall = 1: Wire (3.0)
+|   |   turningSmall = 0:
+|   |   |   numAngleSmall <= 0.465409 : Other (2.0)
+|   |   |   numAngleSmall > 0.465409 : Wire (4.0)
+
+
+Subtree [S17]
+
+numMaxDistSmall > 10.9486 : Wire (3.0)
+numMaxDistSmall <= 10.9486 :
+|   turningLarge = 1: Other (3.0/1.0)
+|   turningLarge = 0:
+|   |   numAngleLarge <= 0.16462 : Other (44.0)
+|   |   numAngleLarge > 0.16462 :
+|   |   |   numCorners <= 0.025011 : Wire (3.0)
+|   |   |   numCorners > 0.025011 :
+|   |   |   |   turningZero = 0: Other (12.0)
+|   |   |   |   turningZero = 1:
+|   |   |   |   |   numArePerpendicular <= 4.39823 : Wire (2.0)
+|   |   |   |   |   numArePerpendicular > 4.39823 : Other (8.0)
+
+
+Subtree [S18]
+
+numSimilarlyBounded > 4 : Other (2.0)
+numSimilarlyBounded <= 4 :
+|   numCurvedCurved > 31 : Wire (13.0/1.0)
+|   numCurvedCurved <= 31 :
+|   |   numStraightStraight > 25 : Other (4.0)
+|   |   numStraightStraight <= 25 :
+|   |   |   numCorners > 1.0045 : Wire (9.0)
+|   |   |   numCorners <= 1.0045 :
+|   |   |   |   numArePerpendicular <= 13.8348 :
+|   |   |   |   |   numCurvedStraight <= 22 : Other (10.0)
+|   |   |   |   |   numCurvedStraight > 22 : Wire (2.0)
+|   |   |   |   numArePerpendicular > 13.8348 :
+|   |   |   |   |   turningZero = 0: Wire (3.0)
+|   |   |   |   |   turningZero = 1:
+|   |   |   |   |   |   numAreParallel <= 15.6856 : Wire (4.0)
+|   |   |   |   |   |   numAreParallel > 15.6856 : Other (3.0/1.0)
+
+
+Subtree [S19]
+
+distFromTB > 0.890037 : Wire (6.0/1.0)
+distFromTB <= 0.890037 :
+|   numMinDistLarge <= 46.0176 : Wire (4.0/1.0)
+|   numMinDistLarge > 46.0176 : Other (12.0)
+
+
+Subtree [S20]
+
+numAreParallel <= 17.7148 : Wire (19.0)
+numAreParallel > 17.7148 :
+|   numMinDistEndsLarge <= 3.29691 : Wire (2.0)
+|   numMinDistEndsLarge > 3.29691 : Other (3.0)
+
+
+Subtree [S21]
+
+numDistAvgPtsLarge <= 49.3172 : Other (7.0)
+numDistAvgPtsLarge > 49.3172 : Wire (4.0)
+
+
+Subtree [S22]
+
+numDistAvgPtsLarge <= 59.7015 : Other (3.0)
+numDistAvgPtsLarge > 59.7015 : Wire (7.0)
+
+
+Subtree [S23]
+
+turningLarge = 0: Wire (9.0)
+turningLarge = 1: Other (3.0)
+
+
+Subtree [S24]
+
+arcLengthLong = 1: Other (36.0)
+arcLengthLong = 0:
+|   numSimilarlyBounded <= 2 :
+|   |   turning360 = 1: Other (8.0)
+|   |   turning360 = 0:
+|   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   turningZero = 1: Other (15.0)
+|   |   |   |   turningZero = 0:
+|   |   |   |   |   turningLarge = 1: Other (13.0/1.0)
+|   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   turningSmall = 0: Other (22.0/1.0)
+|   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   numTouching > 0.994706 : Other (64.0)
+|   |   |   |   |   |   |   numTouching <= 0.994706 :
+|   |   |   |   |   |   |   |   numStraightStraight > 21 : Other (3.0)
+|   |   |   |   |   |   |   |   numStraightStraight <= 21 :
+|   |   |   |   |   |   |   |   |   numCurvedStraight <= 17 : Wire (3.0/1.0)
+|   |   |   |   |   |   |   |   |   numCurvedStraight > 17 : Other (3.0)
+|   |   |   numSimilarlyBounded > 1 :
+|   |   |   |   distFromTB <= -0.97087 : Wire (4.0/1.0)
+|   |   |   |   distFromTB > -0.97087 : Other (48.0)
+|   numSimilarlyBounded > 2 :
+|   |   distFromTB <= -0.965347 : Wire (2.0)
+|   |   distFromTB > -0.965347 :
+|   |   |   numMaxDistSmall > 6.54586 : Other (33.0)
+|   |   |   numMaxDistSmall <= 6.54586 :
+|   |   |   |   numAngleLarge <= 0.0221917 : Wire (3.0)
+|   |   |   |   numAngleLarge > 0.0221917 : Other (3.0)
+
+
+Subtree [S25]
+
+distFromTB <= -0.891113 : Wire (4.0/1.0)
+distFromTB > -0.891113 : Other (5.0)
+
+
+Subtree [S26]
+
+distFromLR <= 0.964037 : Wire (6.0)
+distFromLR > 0.964037 : Other (2.0)
+
+
+Subtree [S27]
+
+distFromLR <= -0.255405 : Other (29.0)
+distFromLR > -0.255405 :
+|   numSimilarlyBounded <= 1 : Other (6.0)
+|   numSimilarlyBounded > 1 :
+|   |   numCorners <= 0.0332781 : Other (3.0)
+|   |   numCorners > 0.0332781 : Wire (4.0)
+
+
+Subtree [S28]
+
+numDistAvgPtsLarge <= 37.2236 : Other (5.0)
+numDistAvgPtsLarge > 37.2236 :
+|   numDistAvgPtsSmall <= 2.82258 : Wire (13.0)
+|   numDistAvgPtsSmall > 2.82258 : Other (3.0/1.0)
+
+
+Subtree [S29]
+
+numTouching <= 0.760003 : Other (19.0/1.0)
+numTouching > 0.760003 :
+|   turningSmall = 0:
+|   |   numCorners <= 0.0248696 : Wire (12.0)
+|   |   numCorners > 0.0248696 :
+|   |   |   numSimilarlyBounded > 2 : Other (3.0)
+|   |   |   numSimilarlyBounded <= 2 :
+|   |   |   |   numMinDistEndsLarge <= 3.43575 :
+|   |   |   |   |   turningZero = 0: Wire (3.0)
+|   |   |   |   |   turningZero = 1:
+|   |   |   |   |   |   numSimilarlyBounded > 1 : Wire (4.0/1.0)
+|   |   |   |   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   |   |   |   numMinDistEndsLarge > 2.69789 : Wire (9.0)
+|   |   |   |   |   |   |   numMinDistEndsLarge <= 2.69789 :
+|   |   |   |   |   |   |   |   distFromTB <= 0.475749 : Other (3.0)
+|   |   |   |   |   |   |   |   distFromTB > 0.475749 : Wire (2.0)
+|   |   |   |   numMinDistEndsLarge > 3.43575 :
+|   |   |   |   |   numSimilarlyBounded > 1 : Other (3.0)
+|   |   |   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   |   |   numCurvedCurved <= 29 : Other (3.0)
+|   |   |   |   |   |   numCurvedCurved > 29 : Wire (2.0)
+|   turningSmall = 1:
+|   |   numMaxDistSmall > 9.61125 : Wire (8.0)
+|   |   numMaxDistSmall <= 9.61125 :
+|   |   |   numSimilarlyBounded > 1 : Other (9.0)
+|   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   numDistAvgPtsLarge <= 45.1736 : Wire (3.0)
+|   |   |   |   numDistAvgPtsLarge > 45.1736 :
+|   |   |   |   |   distFromLR <= 0.856974 : Other (6.0)
+|   |   |   |   |   distFromLR > 0.856974 : Wire (2.0)
+
+
+Subtree [S30]
+
+numSimilarlyBounded <= 1 :
+|   numMaxDistLarge <= 28.6597 : Wire (5.0)
+|   numMaxDistLarge > 28.6597 :
+|   |   numStraightStraight > 24 : Other (18.0)
+|   |   numStraightStraight <= 24 :
+|   |   |   numMinDistSmall <= 3.04771 :
+|   |   |   |   numAngleSmall > 1.00761 : Other (22.0)
+|   |   |   |   numAngleSmall <= 1.00761 :
+|   |   |   |   |   turningZero = 0:
+|   |   |   |   |   |   distFromTB <= 0.937646 : Other (13.0)
+|   |   |   |   |   |   distFromTB > 0.937646 : Wire (3.0)
+|   |   |   |   |   turningZero = 1:
+|   |   |   |   |   |   numAngleLarge > 0.0734158 : Other (5.0)
+|   |   |   |   |   |   numAngleLarge <= 0.0734158 :
+|   |   |   |   |   |   |   numCorners <= 0.978443 : Wire (4.0)
+|   |   |   |   |   |   |   numCorners > 0.978443 : Other (3.0)
+|   |   |   numMinDistSmall > 3.04771 :
+|   |   |   |   numAngleSmall > 1.01241 : Wire (4.0)
+|   |   |   |   numAngleSmall <= 1.01241 :
+|   |   |   |   |   distFromTB <= -0.121203 : Other (6.0)
+|   |   |   |   |   distFromTB > -0.121203 : Wire (5.0/1.0)
+numSimilarlyBounded > 1 :
+|   numStraightCurved <= 20 : Other (43.0)
+|   numStraightCurved > 20 :
+|   |   numAreParallel > 10.5948 : Other (12.0)
+|   |   numAreParallel <= 10.5948 :
+|   |   |   numCurvedStraight <= 15 : Wire (2.0)
+|   |   |   numCurvedStraight > 15 : Other (5.0/1.0)
+
+
+Subtree [S31]
+
+numSimilarlyBounded > 3 : Other (10.0)
+numSimilarlyBounded <= 3 :
+|   turningLarge = 0:
+|   |   numMinDistSmall <= 3.02769 : Wire (6.0)
+|   |   numMinDistSmall > 3.02769 :
+|   |   |   numMinDistEndsLarge > 7.22797 : Wire (8.0/1.0)
+|   |   |   numMinDistEndsLarge <= 7.22797 :
+|   |   |   |   numDistAvgPtsLarge > 62.6787 : Other (17.0)
+|   |   |   |   numDistAvgPtsLarge <= 62.6787 :
+|   |   |   |   |   numDistAvgPtsLarge <= 42.5316 : Other (12.0)
+|   |   |   |   |   numDistAvgPtsLarge > 42.5316 :
+|   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   numTouching > 3.93807 : Wire (8.0)
+|   |   |   |   |   |   |   numTouching <= 3.93807 :
+|   |   |   |   |   |   |   |   numCorners <= 0.170817 : Wire (4.0)
+|   |   |   |   |   |   |   |   numCorners > 0.170817 :
+|   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 0: Other (3.0)
+|   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 1.75159 : Wire (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numDistAvgPtsSmall > 1.75159 : Other (6.0)
+|   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   numCurvedStraight > 23 : Wire (2.0)
+|   |   |   |   |   |   |   numCurvedStraight <= 23 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 3.97182 : Other (9.0/1.0)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 3.97182 : Wire (2.0)
+|   turningLarge = 1:
+|   |   distBetweenEndsLarge = 1: Wire (5.0)
+|   |   distBetweenEndsLarge = 0:
+|   |   |   distBetweenEndsSmall = 0: Other (3.0/1.0)
+|   |   |   distBetweenEndsSmall = 1: Wire (3.0)
+
+
+Subtree [S32]
+
+distBetweenEndsSmall = 0: Wire (16.0/1.0)
+distBetweenEndsSmall = 1: Other (3.0/1.0)
+
+
+Subtree [S33]
+
+numDistAvgPtsSmall > 4.97333 : Text (4.0/1.0)
+numDistAvgPtsSmall <= 4.97333 :
+|   distBetweenEndsSmall = 0:
+|   |   numStraightCurved <= 28 :
+|   |   |   distBetweenEndsLarge = 0: Other (46.0/1.0)
+|   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   numPenLifted > 0 : Other (7.0)
+|   |   |   |   numPenLifted <= 0 :
+|   |   |   |   |   numMaxDistSmall > 8.64923 : Wire (4.0/1.0)
+|   |   |   |   |   numMaxDistSmall <= 8.64923 :
+|   |   |   |   |   |   numDistAvgPtsSmall > 0.990951 : Other (18.0)
+|   |   |   |   |   |   numDistAvgPtsSmall <= 0.990951 :
+|   |   |   |   |   |   |   distFromLR <= -0.597223 : Other (2.0)
+|   |   |   |   |   |   |   distFromLR > -0.597223 : Wire (2.0)
+|   |   numStraightCurved > 28 :
+|   |   |   numSimilarlyBounded > 1 : Other (4.0)
+|   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   numDistAvgPtsSmall <= 1.98071 : Wire (5.0)
+|   |   |   |   numDistAvgPtsSmall > 1.98071 : Other (2.0)
+|   distBetweenEndsSmall = 1:
+|   |   turning360 = 1: Other (3.0)
+|   |   turning360 = 0:
+|   |   |   arcLengthLong = 1: Wire (2.0)
+|   |   |   arcLengthLong = 0:
+|   |   |   |   numAngleSmall > 1.00955 : Wire (4.0)
+|   |   |   |   numAngleSmall <= 1.00955 :
+|   |   |   |   |   distFromLR <= 0.935618 : Other (6.0)
+|   |   |   |   |   distFromLR > 0.935618 : Wire (3.0)
+
+
+Subtree [S34]
+
+numAngleSmall <= 0.00404061 : Other (5.0)
+numAngleSmall > 0.00404061 :
+|   turningZero = 0: Other (3.0/1.0)
+|   turningZero = 1:
+|   |   distFromLR > 0.970971 : Other (4.0/1.0)
+|   |   distFromLR <= 0.970971 :
+|   |   |   numArePerpendicular <= 4.55167 : Wire (17.0)
+|   |   |   numArePerpendicular > 4.55167 :
+|   |   |   |   numArePerpendicular <= 5.13698 : Other (4.0)
+|   |   |   |   numArePerpendicular > 5.13698 :
+|   |   |   |   |   numDistAvgPtsLarge <= 53.4508 : Wire (8.0)
+|   |   |   |   |   numDistAvgPtsLarge > 53.4508 :
+|   |   |   |   |   |   numMaxDistLarge <= 54.6441 : Other (7.0/1.0)
+|   |   |   |   |   |   numMaxDistLarge > 54.6441 : Wire (6.0)
+
+
+Subtree [S35]
+
+numSimilarlyBounded <= 1 : Wire (15.0)
+numSimilarlyBounded > 1 :
+|   distBetweenEndsLarge = 0:
+|   |   numAngleLarge <= 0.607524 : Wire (12.0)
+|   |   numAngleLarge > 0.607524 : Other (3.0/1.0)
+|   distBetweenEndsLarge = 1:
+|   |   numAreParallel <= 4.9724 : Other (2.0)
+|   |   numAreParallel > 4.9724 : Wire (22.0/1.0)
+
+
+Subtree [S36]
+
+numSimilarlyBounded > 0 : Text (19.0)
+numSimilarlyBounded <= 0 :
+|   numArePerpendicular <= 12.0804 : Text (10.0)
+|   numArePerpendicular > 12.0804 : Wire (2.0/1.0)
+
+
+Simplified Decision Tree:
+
+distFromLR <= 0.974468 :
+|   numMinDistSmall <= 1.04893 :
+|   |   distFromTB <= 0.976898 :
+|   |   |   numDistAvgPtsLarge > 68.7253 : Text (11.0/2.5)
+|   |   |   numDistAvgPtsLarge <= 68.7253 :
+|   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   numDistAvgPtsSmall <= 0.893119 :
+|   |   |   |   |   |   numSimilarlyBounded <= 0 :
+|   |   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   |   distBetweenEndsLarge = 1: Wire (61.0/2.6)
+|   |   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   |   turningZero = 1: Wire (4.0/1.2)
+|   |   |   |   |   |   |   |   |   turningZero = 0:
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 0.985829 : Text (6.0/2.3)
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 0.985829 : Wire (7.0/2.4)
+|   |   |   |   |   |   |   arcLengthShort = 1:
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.220458 : Other (4.0/1.2)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 0.220458 : Wire (2.0/1.0)
+|   |   |   |   |   |   numSimilarlyBounded > 0 :
+|   |   |   |   |   |   |   numEndsClose > 0 : Other (3.0/1.1)
+|   |   |   |   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   |   |   |   numTouching <= 0.0173604 : Other (9.0/2.4)
+|   |   |   |   |   |   |   |   numTouching > 0.0173604 :
+|   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   |   |   numAreParallel <= 11.4492 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numAreParallel > 11.4492 : Other (5.0/1.2)
+|   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge <= 1.72736 : Other (4.0/1.2)
+|   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge > 1.72736 :[S1]
+|   |   |   |   |   numDistAvgPtsSmall > 0.893119 :
+|   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   distFromTB <= -0.899153 : Other (5.0/1.2)
+|   |   |   |   |   |   |   distFromTB > -0.899153 : Text (9.0/2.4)
+|   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   distFromTB <= 0.971979 :
+|   |   |   |   |   |   |   |   numMinDistSmall > 1.04271 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   numMinDistSmall <= 1.04271 :
+|   |   |   |   |   |   |   |   |   numCurvedStraight <= 18 : Other (11.0/1.3)
+|   |   |   |   |   |   |   |   |   numCurvedStraight > 18 :
+|   |   |   |   |   |   |   |   |   |   numAngleSmall <= 0.465409 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numAngleSmall > 0.465409 : Other (2.0/1.0)
+|   |   |   |   |   |   |   distFromTB > 0.971979 :
+|   |   |   |   |   |   |   |   numArePerpendicular <= 19.8426 : Text (5.0/1.2)
+|   |   |   |   |   |   |   |   numArePerpendicular > 19.8426 : Other (2.0/1.0)
+|   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   numCurvedCurved <= 30 : Other (14.0/2.5)
+|   |   |   |   |   numCurvedCurved > 30 : Text (5.0/1.2)
+|   |   distFromTB > 0.976898 :
+|   |   |   numMinDistLarge > 81.2165 : Other (3.0/1.1)
+|   |   |   numMinDistLarge <= 81.2165 :
+|   |   |   |   distBetweenEndsLarge = 0: Text (39.0/1.4)
+|   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   numDistAvgPtsSmall <= 0.0827938 : Wire (2.0/1.0)
+|   |   |   |   |   numDistAvgPtsSmall > 0.0827938 : Text (12.0/1.3)
+|   numMinDistSmall > 1.04893 :
+|   |   numEndsClose <= 0 :
+|   |   |   numMaxDistSmall <= 15.7433 :
+|   |   |   |   numSimilarlyBounded <= 0 :
+|   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   distFromTB <= 0.976023 :
+|   |   |   |   |   |   |   numMinDistSmall <= 3.07672 :
+|   |   |   |   |   |   |   |   turningSmall = 0: Wire (308.0/10.7)
+|   |   |   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   |   |   numTouching <= 0.996241 :
+|   |   |   |   |   |   |   |   |   |   numDistAvgPtsSmall > 0.507691 : Other (8.0/2.4)
+|   |   |   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.507691 :[S2]
+|   |   |   |   |   |   |   |   |   numTouching > 0.996241 :
+|   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 26 : Wire (81.0/1.4)
+|   |   |   |   |   |   |   |   |   |   numCurvedCurved > 26 :
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.09913 : Wire (29.0/1.4)
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.09913 :[S3]
+|   |   |   |   |   |   |   numMinDistSmall > 3.07672 :
+|   |   |   |   |   |   |   |   arcLengthLong = 1: Wire (50.0/2.6)
+|   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   numStraightCurved > 40 : Wire (8.0/1.3)
+|   |   |   |   |   |   |   |   |   numStraightCurved <= 40 :
+|   |   |   |   |   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   |   |   |   |   numCorners <= 0.170817 : Wire (11.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   numCorners > 0.170817 :[S4]
+|   |   |   |   |   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge <= 30.5672 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge > 30.5672 :
+|   |   |   |   |   |   |   |   |   |   |   |   numCorners > 0.110053 : Other (18.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   |   numCorners <= 0.110053 :[S5]
+|   |   |   |   |   |   distFromTB > 0.976023 :
+|   |   |   |   |   |   |   numCurvedStraight <= 12 : Text (7.0/2.4)
+|   |   |   |   |   |   |   numCurvedStraight > 12 : Wire (14.0/1.3)
+|   |   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   |   numCorners <= 0.0324837 : Other (73.0/2.6)
+|   |   |   |   |   |   numCorners > 0.0324837 :
+|   |   |   |   |   |   |   numMinDistSmall > 2.05479 : Other (11.0/1.3)
+|   |   |   |   |   |   |   numMinDistSmall <= 2.05479 :
+|   |   |   |   |   |   |   |   distFromLR <= -0.47055 : Other (4.0/2.2)
+|   |   |   |   |   |   |   |   distFromLR > -0.47055 : Wire (6.0/1.2)
+|   |   |   |   numSimilarlyBounded > 0 :
+|   |   |   |   |   numAngleSmall <= 2.95266 :
+|   |   |   |   |   |   numDistAvgPtsSmall <= 0.225328 :
+|   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   numAreParallel <= 7.35366 :
+|   |   |   |   |   |   |   |   |   distFromLR <= -0.854545 :
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   |   numCurvedCurved > 34 : Wire (4.0/1.2)
+|   |   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 34 :[S6]
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 1:[S7]
+|   |   |   |   |   |   |   |   |   distFromLR > -0.854545 :
+|   |   |   |   |   |   |   |   |   |   turning360 = 0: Wire (51.0/6.1)
+|   |   |   |   |   |   |   |   |   |   turning360 = 1:
+|   |   |   |   |   |   |   |   |   |   |   distFromLR <= 0.955014 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   distFromLR > 0.955014 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   numAreParallel > 7.35366 :
+|   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.74944 : Other (17.0/2.5)
+|   |   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.74944 :[S8]
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 1:
+|   |   |   |   |   |   |   |   |   |   |   numStraightCurved > 37 : Wire (3.0/2.1)
+|   |   |   |   |   |   |   |   |   |   |   numStraightCurved <= 37 :
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 0: Other (67.0/1.4)
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 1:[S9]
+|   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   |   |   |   |   |   distFromLR <= -0.932434 : Other (16.0/2.5)
+|   |   |   |   |   |   |   |   |   |   distFromLR > -0.932434 :
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge <= 22.6147 : Other (3.0/1.1)
+|   |   |   |   |   |   |   |   |   |   |   numMaxDistLarge > 22.6147 :[S10]
+|   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   numMaxDistLarge <= 23.2395 : Wire (46.0/1.4)
+|   |   |   |   |   |   |   |   numMaxDistLarge > 23.2395 :
+|   |   |   |   |   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.04822 :
+|   |   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge <= 2.8753 :[S11]
+|   |   |   |   |   |   |   |   |   |   |   numMinDistEndsLarge > 2.8753 :
+|   |   |   |   |   |   |   |   |   |   |   |   numSimilarlyBounded <= 1 :[S12]
+|   |   |   |   |   |   |   |   |   |   |   |   numSimilarlyBounded > 1 :[S13]
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.04822 :
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular <= 8.65143 :[S14]
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular > 8.65143 :
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 0:[S15]
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 1:[S16]
+|   |   |   |   |   |   |   |   |   arcLengthLong = 1:
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall <= 6.59715 :
+|   |   |   |   |   |   |   |   |   |   |   numCorners > 0.170817 : Other (7.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   numCorners <= 0.170817 :
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 0:[S17]
+|   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 1:[S18]
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall > 6.59715 :
+|   |   |   |   |   |   |   |   |   |   |   numPenLifted <= 0 : Wire (65.0/2.6)
+|   |   |   |   |   |   |   |   |   |   |   numPenLifted > 0 :[S19]
+|   |   |   |   |   |   numDistAvgPtsSmall > 0.225328 :
+|   |   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   |   distFromTB <= 0.970569 :
+|   |   |   |   |   |   |   |   |   numTouching <= 2.97626 :
+|   |   |   |   |   |   |   |   |   |   numPenLifted > 0 : Other (34.0/2.6)
+|   |   |   |   |   |   |   |   |   |   numPenLifted <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 0:[S20]
+|   |   |   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   numCurvedCurved <= 21 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 0:[S21]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   turningSmall = 1:[S22]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   numCurvedCurved > 21 :[S23]
+|   |   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 1:[S24]
+|   |   |   |   |   |   |   |   |   |   |   distBetweenEndsLarge = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 1: Wire (12.0/2.5)
+|   |   |   |   |   |   |   |   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.90831 :[S25]
+|   |   |   |   |   |   |   |   |   |   |   |   |   numMinDistSmall > 2.90831 :[S26]
+|   |   |   |   |   |   |   |   |   numTouching > 2.97626 :
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 0:[S27]
+|   |   |   |   |   |   |   |   |   |   arcLengthLong = 1:[S28]
+|   |   |   |   |   |   |   |   distFromTB > 0.970569 :
+|   |   |   |   |   |   |   |   |   distFromLR <= 0.969258 :
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall <= 1.99345 :
+|   |   |   |   |   |   |   |   |   |   |   distFromTB <= 0.978172 : Other (7.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   distFromTB > 0.978172 : Text (8.0/2.4)
+|   |   |   |   |   |   |   |   |   |   numMinDistSmall > 1.99345 :[S29]
+|   |   |   |   |   |   |   |   |   distFromLR > 0.969258 :
+|   |   |   |   |   |   |   |   |   |   numAngleLarge <= 0.0987839 : Text (5.0/1.2)
+|   |   |   |   |   |   |   |   |   |   numAngleLarge > 0.0987839 : Wire (4.0/1.2)
+|   |   |   |   |   |   |   arcLengthShort = 1:
+|   |   |   |   |   |   |   |   numMaxDistSmall > 13.4157 : Other (6.0/1.2)
+|   |   |   |   |   |   |   |   numMaxDistSmall <= 13.4157 :
+|   |   |   |   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 1: Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular <= 10.9123 :[S30]
+|   |   |   |   |   |   |   |   |   |   |   numArePerpendicular > 10.9123 :
+|   |   |   |   |   |   |   |   |   |   |   |   distFromLR <= -0.977583 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   distFromLR > -0.977583 : Wire (57.0/7.2)
+|   |   |   |   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   |   |   |   distFromLR > -0.917808 : Other (5.0/1.2)
+|   |   |   |   |   |   |   |   |   |   distFromLR <= -0.917808 :
+|   |   |   |   |   |   |   |   |   |   |   numAngleSmall <= 1.40887 : Wire (5.0/1.2)
+|   |   |   |   |   |   |   |   |   |   |   numAngleSmall > 1.40887 : Other (2.0/1.0)
+|   |   |   |   |   numAngleSmall > 2.95266 :
+|   |   |   |   |   |   numDistAvgPtsSmall <= 2.58922 :
+|   |   |   |   |   |   |   distFromTB <= 0.975509 : Wire (16.0/1.3)
+|   |   |   |   |   |   |   distFromTB > 0.975509 : Other (2.0/1.0)
+|   |   |   |   |   |   numDistAvgPtsSmall > 2.58922 :
+|   |   |   |   |   |   |   numCurvedCurved <= 37 : Text (7.0/1.3)
+|   |   |   |   |   |   |   numCurvedCurved > 37 : Wire (2.0/1.8)
+|   |   |   numMaxDistSmall > 15.7433 :
+|   |   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   |   numArePerpendicular <= 6.88126 : Wire (4.0/1.2)
+|   |   |   |   |   |   numArePerpendicular > 6.88126 : Other (4.0/1.2)
+|   |   |   |   |   arcLengthLong = 1:
+|   |   |   |   |   |   numCurvedCurved <= 37 : Wire (350.0/2.6)
+|   |   |   |   |   |   numCurvedCurved > 37 :
+|   |   |   |   |   |   |   numCurvedCurved > 43 : Wire (7.0/1.3)
+|   |   |   |   |   |   |   numCurvedCurved <= 43 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.402328 : Wire (7.0/2.4)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 0.402328 : Other (4.0/1.2)
+|   |   |   |   distBetweenEndsSmall = 1:
+|   |   |   |   |   numStraightStraight <= 16 : Other (28.0/1.4)
+|   |   |   |   |   numStraightStraight > 16 :
+|   |   |   |   |   |   numAngleSmall <= 2.07961 : Wire (6.0/1.2)
+|   |   |   |   |   |   numAngleSmall > 2.07961 : Other (2.0/1.0)
+|   |   numEndsClose > 0 :
+|   |   |   distBetweenEndsSmall = 1: Wire (5.0/2.3)
+|   |   |   distBetweenEndsSmall = 0:
+|   |   |   |   numSimilarlyBounded <= 3 :
+|   |   |   |   |   numMinDistEndsLarge > 2.05709 : Other (101.0/1.4)
+|   |   |   |   |   numMinDistEndsLarge <= 2.05709 :
+|   |   |   |   |   |   numAngleSmall <= 0.465409 : Other (2.0/1.0)
+|   |   |   |   |   |   numAngleSmall > 0.465409 : Wire (2.0/1.0)
+|   |   |   |   numSimilarlyBounded > 3 :
+|   |   |   |   |   numAngleSmall <= 3.31583 : Other (6.0/1.2)
+|   |   |   |   |   numAngleSmall > 3.31583 : Text (2.0/1.0)
+distFromLR > 0.974468 :
+|   numMaxDistSmall <= 12.3569 :
+|   |   numMinDistSmall <= 1.99572 :
+|   |   |   numMaxDistLarge <= 65.8334 :
+|   |   |   |   distFromLR <= 0.975483 :
+|   |   |   |   |   numMaxDistSmall <= 2.35506 : Wire (6.0/1.2)
+|   |   |   |   |   numMaxDistSmall > 2.35506 :
+|   |   |   |   |   |   numMaxDistSmall <= 6.92102 : Text (10.0/1.3)
+|   |   |   |   |   |   numMaxDistSmall > 6.92102 : Other (2.0/1.0)
+|   |   |   |   distFromLR > 0.975483 :
+|   |   |   |   |   numMinDistSmall <= 1.02581 : Text (241.0/5.0)
+|   |   |   |   |   numMinDistSmall > 1.02581 :
+|   |   |   |   |   |   numEndsClose > 0 : Other (5.0/2.3)
+|   |   |   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   |   |   numDistAvgPtsSmall <= 0.0998897 :
+|   |   |   |   |   |   |   |   numMaxDistLarge <= 43.0686 : Text (2.0/1.8)
+|   |   |   |   |   |   |   |   numMaxDistLarge > 43.0686 : Wire (5.0/1.2)
+|   |   |   |   |   |   |   numDistAvgPtsSmall > 0.0998897 :
+|   |   |   |   |   |   |   |   numStraightStraight <= 25 : Text (103.0/8.4)
+|   |   |   |   |   |   |   |   numStraightStraight > 25 :
+|   |   |   |   |   |   |   |   |   arcLengthShort = 1: Wire (2.0/1.8)
+|   |   |   |   |   |   |   |   |   arcLengthShort = 0:
+|   |   |   |   |   |   |   |   |   |   distFromLR <= 0.977819 : Text (4.0/1.2)
+|   |   |   |   |   |   |   |   |   |   distFromLR > 0.977819 : Other (4.0/1.2)
+|   |   |   numMaxDistLarge > 65.8334 :
+|   |   |   |   distBetweenEndsLarge = 1: Text (5.0/2.3)
+|   |   |   |   distBetweenEndsLarge = 0:
+|   |   |   |   |   numAngleLarge <= 0.0717759 : Other (7.0/1.3)
+|   |   |   |   |   numAngleLarge > 0.0717759 : Text (2.0/1.0)
+|   |   numMinDistSmall > 1.99572 :
+|   |   |   numDistAvgPtsSmall <= 0.417562 :
+|   |   |   |   numDistAvgPtsLarge > 68.6401 : Other (2.0/1.0)
+|   |   |   |   numDistAvgPtsLarge <= 68.6401 :
+|   |   |   |   |   turningSmall = 0: Wire (17.0/1.3)
+|   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   distFromLR <= 0.97812 : Wire (7.0/1.3)
+|   |   |   |   |   |   distFromLR > 0.97812 : Other (4.0/1.2)
+|   |   |   numDistAvgPtsSmall > 0.417562 :
+|   |   |   |   arcLengthLong = 1: Other (12.0/2.5)
+|   |   |   |   arcLengthLong = 0:
+|   |   |   |   |   numDistAvgPtsLarge <= 52.8708 :
+|   |   |   |   |   |   numEndsClose > 0 : Other (4.0/2.2)
+|   |   |   |   |   |   numEndsClose <= 0 :
+|   |   |   |   |   |   |   numCurvedCurved <= 26 : Text (37.0/2.6)
+|   |   |   |   |   |   |   numCurvedCurved > 26 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 1.95245 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 1.95245 :
+|   |   |   |   |   |   |   |   |   turningLarge = 0:
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall <= 7.80679 : Text (10.0/1.3)
+|   |   |   |   |   |   |   |   |   |   numMaxDistSmall > 7.80679 : Other (3.0/1.1)
+|   |   |   |   |   |   |   |   |   turningLarge = 1:
+|   |   |   |   |   |   |   |   |   |   numAngleLarge <= 0.024162 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   numAngleLarge > 0.024162 : Wire (2.0/1.8)
+|   |   |   |   |   numDistAvgPtsLarge > 52.8708 :
+|   |   |   |   |   |   distFromLR > 0.977875 : Other (39.0/2.6)
+|   |   |   |   |   |   distFromLR <= 0.977875 :
+|   |   |   |   |   |   |   numMinDistSmall <= 2.04911 : Text (12.0/1.3)
+|   |   |   |   |   |   |   numMinDistSmall > 2.04911 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 2.98066 : Other (8.0/1.3)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 2.98066 :
+|   |   |   |   |   |   |   |   |   numMinDistSmall <= 2.99422 : Text (7.0/2.4)
+|   |   |   |   |   |   |   |   |   numMinDistSmall > 2.99422 : Other (2.0/1.0)
+|   numMaxDistSmall > 12.3569 :
+|   |   distBetweenEndsLarge = 1: Wire (49.0/1.4)
+|   |   distBetweenEndsLarge = 0:
+|   |   |   distFromLR <= 0.978008 : Wire (5.0/2.3)
+|   |   |   distFromLR > 0.978008 : Other (5.0/1.2)
+
+
+Subtree [S1]
+
+numArePerpendicular <= 19.173 : Wire (23.0/4.9)
+numArePerpendicular > 19.173 : Other (2.0/1.0)
+
+
+Subtree [S2]
+
+numMinDistEndsLarge <= 1.552 : Other (2.0/1.0)
+numMinDistEndsLarge > 1.552 : Wire (26.0/3.7)
+
+
+Subtree [S3]
+
+numAngleSmall <= 0.788955 : Other (5.0/1.2)
+numAngleSmall > 0.788955 : Wire (12.0/2.5)
+
+
+Subtree [S4]
+
+numMaxDistSmall <= 5.95934 : Wire (5.0/1.2)
+numMaxDistSmall > 5.95934 :
+|   numAngleSmall <= 0.968478 : Other (11.0/1.3)
+|   numAngleSmall > 0.968478 : Wire (3.0/2.1)
+
+
+Subtree [S5]
+
+numCorners <= 0.03976 : Other (4.0/1.2)
+numCorners > 0.03976 : Wire (4.0/2.2)
+
+
+Subtree [S6]
+
+numCurvedStraight > 23 : Wire (2.0/1.0)
+numCurvedStraight <= 23 :
+|   numMinDistEndsLarge > 3.82282 : Other (16.0/1.3)
+|   numMinDistEndsLarge <= 3.82282 :
+|   |   numCorners <= 0.0128729 : Other (6.0/1.2)
+|   |   numCorners > 0.0128729 :
+|   |   |   numDistAvgPtsLarge <= 40.2574 : Wire (7.0/2.4)
+|   |   |   numDistAvgPtsLarge > 40.2574 : Other (4.0/1.2)
+
+
+Subtree [S7]
+
+distBetweenEndsSmall = 0: Wire (14.0/2.5)
+distBetweenEndsSmall = 1: Other (3.0/2.1)
+
+
+Subtree [S8]
+
+numMinDistEndsLarge > 3.18418 : Wire (5.0/1.2)
+numMinDistEndsLarge <= 3.18418 :
+|   numAngleLarge <= 0.897824 : Other (8.0/1.3)
+|   numAngleLarge > 0.897824 : Wire (2.0/1.0)
+
+
+Subtree [S9]
+
+numAngleSmall <= 1.88936 : Other (16.0/2.5)
+numAngleSmall > 1.88936 : Wire (3.0/1.1)
+
+
+Subtree [S10]
+
+numCurvedCurved > 43 : Other (2.0/1.0)
+numCurvedCurved <= 43 :
+|   numCorners <= 0.0127063 : Other (3.0/2.1)
+|   numCorners > 0.0127063 : Wire (24.0/1.3)
+
+
+Subtree [S11]
+
+numArePerpendicular <= 5.92669 : Other (7.0/1.3)
+numArePerpendicular > 5.92669 :
+|   distFromLR <= -0.957614 : Other (10.0/3.5)
+|   distFromLR > -0.957614 :
+|   |   numAngleSmall > 0.0341948 : Wire (10.0/1.3)
+|   |   numAngleSmall <= 0.0341948 :
+|   |   |   numAngleLarge > 0.0213189 : Other (2.0/1.0)
+|   |   |   numAngleLarge <= 0.0213189 :
+|   |   |   |   distFromLR <= 0.73001 : Other (2.0/1.0)
+|   |   |   |   distFromLR > 0.73001 : Wire (5.0/1.2)
+
+
+Subtree [S12]
+
+numMinDistSmall <= 2.01884 : Wire (37.0/1.4)
+numMinDistSmall > 2.01884 :
+|   numAngleLarge <= 0.0354688 : Other (2.0/1.0)
+|   numAngleLarge > 0.0354688 : Wire (5.0/2.3)
+
+
+Subtree [S13]
+
+numCurvedCurved > 27 : Wire (10.0/1.3)
+numCurvedCurved <= 27 :
+|   distFromTB > 0.209424 : Other (3.0/1.1)
+|   distFromTB <= 0.209424 :
+|   |   turningSmall = 1: Wire (3.0/1.1)
+|   |   turningSmall = 0:
+|   |   |   numAngleSmall <= 0.465409 : Other (2.0/1.0)
+|   |   |   numAngleSmall > 0.465409 : Wire (4.0/1.2)
+
+
+Subtree [S14]
+
+numMaxDistSmall > 10.9486 : Wire (3.0/1.1)
+numMaxDistSmall <= 10.9486 :
+|   numAngleLarge <= 0.16462 : Other (45.0/1.4)
+|   numAngleLarge > 0.16462 :
+|   |   numCorners <= 0.025011 : Wire (4.0/1.2)
+|   |   numCorners > 0.025011 :
+|   |   |   turningZero = 0: Other (13.0/1.3)
+|   |   |   turningZero = 1:
+|   |   |   |   numArePerpendicular <= 4.39823 : Wire (2.0/1.0)
+|   |   |   |   numArePerpendicular > 4.39823 : Other (8.0/1.3)
+
+
+Subtree [S15]
+
+numSimilarlyBounded > 4 : Other (2.0/1.0)
+numSimilarlyBounded <= 4 :
+|   numCurvedCurved > 31 : Wire (13.0/2.5)
+|   numCurvedCurved <= 31 :
+|   |   numStraightStraight > 25 : Other (4.0/1.2)
+|   |   numStraightStraight <= 25 :
+|   |   |   numCorners > 1.0045 : Wire (9.0/1.3)
+|   |   |   numCorners <= 1.0045 :
+|   |   |   |   numArePerpendicular > 13.8348 : Wire (10.0/3.5)
+|   |   |   |   numArePerpendicular <= 13.8348 :
+|   |   |   |   |   numCurvedStraight <= 22 : Other (10.0/1.3)
+|   |   |   |   |   numCurvedStraight > 22 : Wire (2.0/1.0)
+
+
+Subtree [S16]
+
+distFromTB > 0.890037 : Wire (6.0/2.3)
+distFromTB <= 0.890037 :
+|   numMinDistLarge <= 46.0176 : Wire (4.0/2.2)
+|   numMinDistLarge > 46.0176 : Other (12.0/1.3)
+
+
+Subtree [S17]
+
+numAreParallel <= 17.7148 : Wire (19.0/1.3)
+numAreParallel > 17.7148 :
+|   numMinDistEndsLarge <= 3.29691 : Wire (2.0/1.0)
+|   numMinDistEndsLarge > 3.29691 : Other (3.0/1.1)
+
+
+Subtree [S18]
+
+numDistAvgPtsLarge <= 49.3172 : Other (7.0/1.3)
+numDistAvgPtsLarge > 49.3172 : Wire (4.0/1.2)
+
+
+Subtree [S19]
+
+numDistAvgPtsLarge <= 59.7015 : Other (3.0/1.1)
+numDistAvgPtsLarge > 59.7015 : Wire (7.0/1.3)
+
+
+Subtree [S20]
+
+numAreParallel > 5.31943 : Other (260.0/15.1)
+numAreParallel <= 5.31943 :
+|   turningLarge = 0: Wire (9.0/1.3)
+|   turningLarge = 1: Other (3.0/1.1)
+
+
+Subtree [S21]
+
+distFromTB <= -0.891113 : Wire (4.0/2.2)
+distFromTB > -0.891113 : Other (5.0/1.2)
+
+
+Subtree [S22]
+
+distFromLR <= 0.964037 : Wire (6.0/1.2)
+distFromLR > 0.964037 : Other (2.0/1.0)
+
+
+Subtree [S23]
+
+distFromLR <= -0.255405 : Other (29.0/1.4)
+distFromLR > -0.255405 :
+|   numSimilarlyBounded <= 1 : Other (6.0/1.2)
+|   numSimilarlyBounded > 1 :
+|   |   numCorners <= 0.0332781 : Other (3.0/1.1)
+|   |   numCorners > 0.0332781 : Wire (4.0/1.2)
+
+
+Subtree [S24]
+
+numDistAvgPtsLarge <= 37.2236 : Other (5.0/1.2)
+numDistAvgPtsLarge > 37.2236 :
+|   numDistAvgPtsSmall <= 2.82258 : Wire (13.0/1.3)
+|   numDistAvgPtsSmall > 2.82258 : Other (3.0/2.1)
+
+
+Subtree [S25]
+
+numTouching <= 0.760003 : Other (19.0/2.5)
+numTouching > 0.760003 :
+|   turningSmall = 0:
+|   |   numCorners <= 0.0248696 : Wire (12.0/1.3)
+|   |   numCorners > 0.0248696 :
+|   |   |   numSimilarlyBounded > 2 : Other (3.0/1.1)
+|   |   |   numSimilarlyBounded <= 2 :
+|   |   |   |   numMinDistEndsLarge <= 3.43575 : Wire (21.0/5.9)
+|   |   |   |   numMinDistEndsLarge > 3.43575 :
+|   |   |   |   |   numSimilarlyBounded > 1 : Other (3.0/1.1)
+|   |   |   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   |   |   numCurvedCurved <= 29 : Other (3.0/1.1)
+|   |   |   |   |   |   numCurvedCurved > 29 : Wire (2.0/1.0)
+|   turningSmall = 1:
+|   |   numMaxDistSmall > 9.61125 : Wire (8.0/1.3)
+|   |   numMaxDistSmall <= 9.61125 :
+|   |   |   numSimilarlyBounded > 1 : Other (9.0/1.3)
+|   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   numDistAvgPtsLarge <= 45.1736 : Wire (3.0/1.1)
+|   |   |   |   numDistAvgPtsLarge > 45.1736 :
+|   |   |   |   |   distFromLR <= 0.856974 : Other (6.0/1.2)
+|   |   |   |   |   distFromLR > 0.856974 : Wire (2.0/1.0)
+
+
+Subtree [S26]
+
+numSimilarlyBounded > 1 : Other (62.0/5.0)
+numSimilarlyBounded <= 1 :
+|   numMaxDistLarge <= 28.6597 : Wire (5.0/1.2)
+|   numMaxDistLarge > 28.6597 :
+|   |   numStraightStraight > 24 : Other (18.0/1.3)
+|   |   numStraightStraight <= 24 :
+|   |   |   numMinDistSmall <= 3.04771 :
+|   |   |   |   numAngleSmall > 1.00761 : Other (22.0/1.3)
+|   |   |   |   numAngleSmall <= 1.00761 :
+|   |   |   |   |   turningZero = 0:
+|   |   |   |   |   |   distFromTB <= 0.937646 : Other (13.0/1.3)
+|   |   |   |   |   |   distFromTB > 0.937646 : Wire (3.0/1.1)
+|   |   |   |   |   turningZero = 1:
+|   |   |   |   |   |   numAngleLarge > 0.0734158 : Other (5.0/1.2)
+|   |   |   |   |   |   numAngleLarge <= 0.0734158 :
+|   |   |   |   |   |   |   numCorners <= 0.978443 : Wire (4.0/1.2)
+|   |   |   |   |   |   |   numCorners > 0.978443 : Other (3.0/1.1)
+|   |   |   numMinDistSmall > 3.04771 :
+|   |   |   |   numAngleSmall > 1.01241 : Wire (4.0/1.2)
+|   |   |   |   numAngleSmall <= 1.01241 :
+|   |   |   |   |   distFromTB <= -0.121203 : Other (6.0/1.2)
+|   |   |   |   |   distFromTB > -0.121203 : Wire (5.0/2.3)
+
+
+Subtree [S27]
+
+numSimilarlyBounded > 3 : Other (10.0/1.3)
+numSimilarlyBounded <= 3 :
+|   turningLarge = 1: Wire (11.0/3.6)
+|   turningLarge = 0:
+|   |   numMinDistSmall <= 3.02769 : Wire (6.0/1.2)
+|   |   numMinDistSmall > 3.02769 :
+|   |   |   numMinDistEndsLarge > 7.22797 : Wire (8.0/2.4)
+|   |   |   numMinDistEndsLarge <= 7.22797 :
+|   |   |   |   numDistAvgPtsLarge > 62.6787 : Other (17.0/1.3)
+|   |   |   |   numDistAvgPtsLarge <= 62.6787 :
+|   |   |   |   |   numDistAvgPtsLarge <= 42.5316 : Other (12.0/1.3)
+|   |   |   |   |   numDistAvgPtsLarge > 42.5316 :
+|   |   |   |   |   |   turningSmall = 0:
+|   |   |   |   |   |   |   numTouching > 3.93807 : Wire (8.0/1.3)
+|   |   |   |   |   |   |   numTouching <= 3.93807 :
+|   |   |   |   |   |   |   |   numCorners <= 0.170817 : Wire (4.0/1.2)
+|   |   |   |   |   |   |   |   numCorners > 0.170817 : Other (12.0/3.6)
+|   |   |   |   |   |   turningSmall = 1:
+|   |   |   |   |   |   |   numCurvedStraight > 23 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   numCurvedStraight <= 23 :
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall <= 3.97182 : Other (9.0/2.4)
+|   |   |   |   |   |   |   |   numDistAvgPtsSmall > 3.97182 : Wire (2.0/1.0)
+
+
+Subtree [S28]
+
+distBetweenEndsSmall = 0: Wire (16.0/2.5)
+distBetweenEndsSmall = 1: Other (3.0/2.1)
+
+
+Subtree [S29]
+
+numDistAvgPtsSmall > 4.97333 : Text (4.0/2.2)
+numDistAvgPtsSmall <= 4.97333 :
+|   distBetweenEndsSmall = 0:
+|   |   numStraightCurved <= 28 : Other (79.0/8.4)
+|   |   numStraightCurved > 28 :
+|   |   |   numSimilarlyBounded > 1 : Other (4.0/1.2)
+|   |   |   numSimilarlyBounded <= 1 :
+|   |   |   |   numDistAvgPtsSmall <= 1.98071 : Wire (5.0/1.2)
+|   |   |   |   numDistAvgPtsSmall > 1.98071 : Other (2.0/1.0)
+|   distBetweenEndsSmall = 1:
+|   |   arcLengthLong = 1: Wire (2.0/1.0)
+|   |   arcLengthLong = 0:
+|   |   |   numAngleSmall > 1.00955 : Wire (5.0/2.3)
+|   |   |   numAngleSmall <= 1.00955 :
+|   |   |   |   distFromLR <= 0.935618 : Other (8.0/1.3)
+|   |   |   |   distFromLR > 0.935618 : Wire (3.0/1.1)
+
+
+Subtree [S30]
+
+numAngleSmall <= 0.00404061 : Other (5.0/1.2)
+numAngleSmall > 0.00404061 :
+|   turningZero = 0: Other (3.0/2.1)
+|   turningZero = 1:
+|   |   distFromLR > 0.970971 : Other (4.0/2.2)
+|   |   distFromLR <= 0.970971 :
+|   |   |   numArePerpendicular <= 4.55167 : Wire (17.0/1.3)
+|   |   |   numArePerpendicular > 4.55167 :
+|   |   |   |   numArePerpendicular <= 5.13698 : Other (4.0/1.2)
+|   |   |   |   numArePerpendicular > 5.13698 :
+|   |   |   |   |   numDistAvgPtsLarge <= 53.4508 : Wire (8.0/1.3)
+|   |   |   |   |   numDistAvgPtsLarge > 53.4508 :
+|   |   |   |   |   |   numMaxDistLarge <= 54.6441 : Other (7.0/2.4)
+|   |   |   |   |   |   numMaxDistLarge > 54.6441 : Wire (6.0/1.2)
+
+
+Tree saved
+
+
+Evaluation on training data (3862 items):
+
+	 Before Pruning           After Pruning
+	----------------   ---------------------------
+	Size      Errors   Size      Errors   Estimate
+
+	 631   84( 2.2%)    501  123( 3.2%)    (11.4%)   <<
+
+Evaluation on test data (1075 items):
+
+	 Before Pruning           After Pruning
+	----------------   ---------------------------
+	Size      Errors   Size      Errors   Estimate
+
+	 631  293(27.3%)    501  289(26.9%)    (11.4%)   <<
+
+
+	  (a)  (b)  (c)	<-classified as
+	 ---- ---- ----
+	  379    4   79	(a): class Wire
+	   12  103   20	(b): class Text
+	  126   48  304	(c): class Other
+

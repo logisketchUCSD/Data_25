@@ -1,0 +1,1324 @@
+
+C4.5 [release 8] decision tree generator	Wed Jul 23 12:50:32 2008
+----------------------------------------
+
+    Options:
+	File stem <nn>
+	Trees evaluated on unseen cases
+
+Read 3862 cases (18 attributes) from nn.data
+
+Decision Tree:
+
+ClosedShapeConnections = 0:
+|   Width <= 0.765252 :
+|   |   Area > 1.11302 : Wire (92.0/1.0)
+|   |   Area <= 1.11302 :
+|   |   |   PathDensity <= 0.230926 :
+|   |   |   |   SelfEnclosingShape = 0:
+|   |   |   |   |   AverageSpeed <= 0.836342 :
+|   |   |   |   |   |   SumTheta <= 0.606761 :
+|   |   |   |   |   |   |   NumLIntersections <= 0 :
+|   |   |   |   |   |   |   |   Width <= 0.478455 :
+|   |   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   Width <= 0.052301 :
+|   |   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.0478406 : Other (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.0478406 :[S1]
+|   |   |   |   |   |   |   |   |   |   |   Width > 0.052301 :
+|   |   |   |   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 0.428121 :[S2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 0.428121 :[S3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumXIntersections > 0 :[S4]
+|   |   |   |   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.1 :[S5]
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   |   SumTheta <= -0.521255 : Other (3.0)
+|   |   |   |   |   |   |   |   |   |   |   SumTheta > -0.521255 :
+|   |   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.0624976 :[S6]
+|   |   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.0624976 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.135664 :[S7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height > 0.135664 :[S8]
+|   |   |   |   |   |   |   |   |   NumSelfIntersections > 0 :
+|   |   |   |   |   |   |   |   |   |   Width <= 0.14076 : Other (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Width > 0.14076 : Text (14.0)
+|   |   |   |   |   |   |   |   Width > 0.478455 :
+|   |   |   |   |   |   |   |   |   ArcLength <= 0.875004 : Wire (23.0)
+|   |   |   |   |   |   |   |   |   ArcLength > 0.875004 : Other (4.0/1.0)
+|   |   |   |   |   |   |   NumLIntersections > 0 :
+|   |   |   |   |   |   |   |   SumTheta <= -0.417988 :
+|   |   |   |   |   |   |   |   |   NumSelfIntersections > 0.1 : Text (3.0/1.0)
+|   |   |   |   |   |   |   |   |   NumSelfIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   PathDensity <= 0.154407 :[S9]
+|   |   |   |   |   |   |   |   |   |   PathDensity > 0.154407 :
+|   |   |   |   |   |   |   |   |   |   |   ArcLength <= 0.407967 : Other (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ArcLength > 0.407967 : Wire (4.0)
+|   |   |   |   |   |   |   |   SumTheta > -0.417988 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   SumSquaredTheta <= 1.22576 :
+|   |   |   |   |   |   |   |   |   |   |   |   Width <= 0.0943852 :[S10]
+|   |   |   |   |   |   |   |   |   |   |   |   Width > 0.0943852 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 0.562656 :[S11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 0.562656 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ArcLength <= 0.268667 :[S12]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ArcLength > 0.268667 :[S13]
+|   |   |   |   |   |   |   |   |   |   |   SumSquaredTheta > 1.22576 :[S14]
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   Height > 0.68869 : Other (8.0)
+|   |   |   |   |   |   |   |   |   |   |   Height <= 0.68869 :
+|   |   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta <= 0.679175 : Wire (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta > 0.679175 :[S15]
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.101736 :[S16]
+|   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.101736 :
+|   |   |   |   |   |   |   |   |   |   |   |   Height > 0.0229794 : Wire (76.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.0229794 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   SumTheta <= 0.00872014 : Other (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SumTheta > 0.00872014 : Wire (2.0)
+|   |   |   |   |   |   |   |   |   |   NumSelfIntersections > 0 :
+|   |   |   |   |   |   |   |   |   |   |   MaximumSpeed <= 0.925985 : Wire (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MaximumSpeed > 0.925985 : Other (3.0)
+|   |   |   |   |   |   SumTheta > 0.606761 :
+|   |   |   |   |   |   |   Height <= 0.144002 : Wire (5.0/1.0)
+|   |   |   |   |   |   |   Height > 0.144002 :
+|   |   |   |   |   |   |   |   SumSquaredTheta <= 1.26563 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0 : Other (27.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0 :
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta <= 0.619126 : Text (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta > 0.619126 : Other (5.0)
+|   |   |   |   |   |   |   |   SumSquaredTheta > 1.26563 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.3 : Other (2.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.3 :
+|   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0 : Text (3.0)
+|   |   |   |   |   |   |   |   |   |   NumLIntersections > 0 : Wire (3.0)
+|   |   |   |   |   AverageSpeed > 0.836342 :
+|   |   |   |   |   |   Height <= 0.186033 :
+|   |   |   |   |   |   |   ArcLength <= 0.317665 :
+|   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0.1 :
+|   |   |   |   |   |   |   |   |   SumAbsTheta <= 0.166606 :
+|   |   |   |   |   |   |   |   |   |   Width > 0.344239 : Wire (5.0)
+|   |   |   |   |   |   |   |   |   |   Width <= 0.344239 :[S17]
+|   |   |   |   |   |   |   |   |   SumAbsTheta > 0.166606 :
+|   |   |   |   |   |   |   |   |   |   Area > 0.0426854 : Other (2.0)
+|   |   |   |   |   |   |   |   |   |   Area <= 0.0426854 :
+|   |   |   |   |   |   |   |   |   |   |   ArcLength > 0.253042 : Wire (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ArcLength <= 0.253042 :
+|   |   |   |   |   |   |   |   |   |   |   |   SumTheta > 0.22143 : Text (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SumTheta <= 0.22143 :[S18]
+|   |   |   |   |   |   |   |   NumTIntersections_teeing > 0.1 :
+|   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 : Text (37.0/1.0)
+|   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   ArcLength > 0.317665 :
+|   |   |   |   |   |   |   |   PathDensity <= 0.182395 : Wire (28.0)
+|   |   |   |   |   |   |   |   PathDensity > 0.182395 : Other (3.0/1.0)
+|   |   |   |   |   |   Height > 0.186033 :
+|   |   |   |   |   |   |   NumXIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   NumLIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   Width <= 0.0808854 :
+|   |   |   |   |   |   |   |   |   |   Area <= 0.0425873 : Text (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Area > 0.0425873 : Wire (6.0)
+|   |   |   |   |   |   |   |   |   Width > 0.0808854 :
+|   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 1.51728 : Text (48.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 1.51728 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 1.20752 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.310676 :[S19]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Height > 0.310676 :[S20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height > 1.20752 :[S21]
+|   |   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   Area > 0.247717 : Wire (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Area <= 0.247717 :[S22]
+|   |   |   |   |   |   |   |   |   |   NumXIntersections > 0 :[S23]
+|   |   |   |   |   |   |   |   NumLIntersections > 0 :
+|   |   |   |   |   |   |   |   |   SumAbsTheta <= 1.01162 :
+|   |   |   |   |   |   |   |   |   |   Width <= 0.466276 :
+|   |   |   |   |   |   |   |   |   |   |   Height <= 0.92218 :
+|   |   |   |   |   |   |   |   |   |   |   |   Width <= 0.03826 :[S24]
+|   |   |   |   |   |   |   |   |   |   |   |   Width > 0.03826 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   MaximumSpeed <= 2.54191 :[S25]
+|   |   |   |   |   |   |   |   |   |   |   |   |   MaximumSpeed > 2.54191 :[S26]
+|   |   |   |   |   |   |   |   |   |   |   Height > 0.92218 :
+|   |   |   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 :[S27]
+|   |   |   |   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height > 1.53739 : Wire (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 1.53739 :[S28]
+|   |   |   |   |   |   |   |   |   |   Width > 0.466276 :
+|   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 1.10389 :
+|   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.60157 : Wire (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Height > 0.60157 :[S29]
+|   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 1.10389 :[S30]
+|   |   |   |   |   |   |   |   |   SumAbsTheta > 1.01162 :
+|   |   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Other (2.0)
+|   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta <= 2.04686 : Text (23.0)
+|   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta > 2.04686 :
+|   |   |   |   |   |   |   |   |   |   |   |   SumTheta <= -0.727894 : Text (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SumTheta > -0.727894 : Other (3.0)
+|   |   |   |   |   |   |   NumXIntersections > 0.1 :
+|   |   |   |   |   |   |   |   Height > 2.28268 : Wire (9.0)
+|   |   |   |   |   |   |   |   Height <= 2.28268 :
+|   |   |   |   |   |   |   |   |   SumSquaredTheta <= 0.223853 : Text (3.0/1.0)
+|   |   |   |   |   |   |   |   |   SumSquaredTheta > 0.223853 :
+|   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0.4 : Other (15.0)
+|   |   |   |   |   |   |   |   |   |   NumXIntersections > 0.4 :[S31]
+|   |   |   |   SelfEnclosingShape = 1:
+|   |   |   |   |   PathDensity <= 0.190009 : Other (141.0/1.0)
+|   |   |   |   |   PathDensity > 0.190009 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Text (2.0)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   NumXIntersections <= 0.3 : Other (5.0/1.0)
+|   |   |   |   |   |   |   NumXIntersections > 0.3 : Wire (2.0)
+|   |   |   PathDensity > 0.230926 :
+|   |   |   |   Height <= 0.243234 :
+|   |   |   |   |   NumLIntersections <= 0.1 :
+|   |   |   |   |   |   AverageSpeed <= 0.99561 : Wire (126.0)
+|   |   |   |   |   |   AverageSpeed > 0.99561 :
+|   |   |   |   |   |   |   ArcLength <= 0.217093 : Text (2.0)
+|   |   |   |   |   |   |   ArcLength > 0.217093 : Wire (9.0/1.0)
+|   |   |   |   |   NumLIntersections > 0.1 :
+|   |   |   |   |   |   NumTIntersections_teeing > 0.2 : Other (2.0)
+|   |   |   |   |   |   NumTIntersections_teeing <= 0.2 :
+|   |   |   |   |   |   |   NumTIntersections_teeing > 0 : Wire (15.0)
+|   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   MaximumSpeed <= 1.92475 : Other (3.0/1.0)
+|   |   |   |   |   |   |   |   MaximumSpeed > 1.92475 : Wire (3.0)
+|   |   |   |   Height > 0.243234 :
+|   |   |   |   |   Height <= 1.29237 :
+|   |   |   |   |   |   SumAbsTheta > 2.28112 : Wire (13.0)
+|   |   |   |   |   |   SumAbsTheta <= 2.28112 :
+|   |   |   |   |   |   |   SumSquaredTheta > 1.84451 : Text (11.0/2.0)
+|   |   |   |   |   |   |   SumSquaredTheta <= 1.84451 :
+|   |   |   |   |   |   |   |   AverageSpeed > 1.37707 : Text (5.0/1.0)
+|   |   |   |   |   |   |   |   AverageSpeed <= 1.37707 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0 :[S32]
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Other (11.0)
+|   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   SumAbsTheta <= 1.38541 : Other (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SumAbsTheta > 1.38541 : Wire (3.0)
+|   |   |   |   |   Height > 1.29237 :
+|   |   |   |   |   |   MaximumSpeed <= 3.86307 : Wire (34.0)
+|   |   |   |   |   |   MaximumSpeed > 3.86307 :
+|   |   |   |   |   |   |   SumAbsTheta <= 0.345497 : Wire (3.0)
+|   |   |   |   |   |   |   SumAbsTheta > 0.345497 : Other (2.0)
+|   Width > 0.765252 :
+|   |   SelfEnclosingShape = 1: Other (27.0)
+|   |   SelfEnclosingShape = 0:
+|   |   |   Width <= 2.0038 :
+|   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   Height <= 0.473381 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Wire (72.0/5.0)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   NumLIntersections > 0.1 : Wire (5.0)
+|   |   |   |   |   |   |   NumLIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   ArcLength <= 0.878831 : Other (2.0)
+|   |   |   |   |   |   |   |   ArcLength > 0.878831 : Wire (6.0/1.0)
+|   |   |   |   |   Height > 0.473381 :
+|   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   PathDensity <= 0.0474459 :
+|   |   |   |   |   |   |   |   ArcLength <= 0.741164 : Other (14.0)
+|   |   |   |   |   |   |   |   ArcLength > 0.741164 :
+|   |   |   |   |   |   |   |   |   NumSelfIntersections > 0 : Wire (4.0)
+|   |   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :[S33]
+|   |   |   |   |   |   |   PathDensity > 0.0474459 :
+|   |   |   |   |   |   |   |   AverageSpeed <= 0.636983 :
+|   |   |   |   |   |   |   |   |   AverageSpeed <= 0.573773 : Other (4.0)
+|   |   |   |   |   |   |   |   |   AverageSpeed > 0.573773 : Wire (3.0)
+|   |   |   |   |   |   |   |   AverageSpeed > 0.636983 :
+|   |   |   |   |   |   |   |   |   Width > 0.854207 : Other (34.0)
+|   |   |   |   |   |   |   |   |   Width <= 0.854207 :
+|   |   |   |   |   |   |   |   |   |   AverageSpeed <= 1.55703 : Other (3.0)
+|   |   |   |   |   |   |   |   |   |   AverageSpeed > 1.55703 : Text (2.0)
+|   |   |   |   |   |   NumXIntersections > 0 :
+|   |   |   |   |   |   |   AverageSpeed <= 1.24388 : Wire (28.0/1.0)
+|   |   |   |   |   |   |   AverageSpeed > 1.24388 :
+|   |   |   |   |   |   |   |   NumLIntersections <= 0 : Wire (2.0)
+|   |   |   |   |   |   |   |   NumLIntersections > 0 : Other (5.0/1.0)
+|   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   AverageSpeed <= 1.37707 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 :
+|   |   |   |   |   |   |   PathDensity > 0.0323698 : Wire (267.0/2.0)
+|   |   |   |   |   |   |   PathDensity <= 0.0323698 :
+|   |   |   |   |   |   |   |   NumLIntersections <= 0.1 : Wire (6.0)
+|   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Other (7.0/1.0)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   SumTheta <= 0.317588 :
+|   |   |   |   |   |   |   |   NumSelfIntersections > 0 : Wire (9.0)
+|   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0.3 : Wire (19.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0.3 :
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.2 :
+|   |   |   |   |   |   |   |   |   |   |   MaximumSpeed > 2.16986 : Wire (34.0)
+|   |   |   |   |   |   |   |   |   |   |   MaximumSpeed <= 2.16986 :[S34]
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.2 :
+|   |   |   |   |   |   |   |   |   |   |   Width <= 1.28151 : Other (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Width > 1.28151 : Wire (7.0)
+|   |   |   |   |   |   |   SumTheta > 0.317588 :
+|   |   |   |   |   |   |   |   NumSelfIntersections > 0 : Wire (4.0)
+|   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.3 : Wire (3.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.3 :[S35]
+|   |   |   |   |   AverageSpeed > 1.37707 :
+|   |   |   |   |   |   Area <= 0.207076 : Wire (20.0)
+|   |   |   |   |   |   Area > 0.207076 :
+|   |   |   |   |   |   |   NumSelfIntersections > 0 : Wire (2.0)
+|   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   NumTIntersections_teeing > 0.4 : Other (3.0)
+|   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0.4 :
+|   |   |   |   |   |   |   |   |   NumLIntersections > 0.2 : Other (2.0)
+|   |   |   |   |   |   |   |   |   NumLIntersections <= 0.2 :
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta <= 0.514054 :[S36]
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta > 0.514054 :
+|   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.0344471 : Wire (3.0)
+|   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.0344471 :[S37]
+|   |   |   Width > 2.0038 :
+|   |   |   |   NumTIntersections_into <= 0.3 :
+|   |   |   |   |   NumLIntersections <= 0.3 : Wire (446.0/5.0)
+|   |   |   |   |   NumLIntersections > 0.3 :
+|   |   |   |   |   |   PathDensity <= 0.041845 : Other (3.0/1.0)
+|   |   |   |   |   |   PathDensity > 0.041845 : Wire (13.0)
+|   |   |   |   NumTIntersections_into > 0.3 :
+|   |   |   |   |   NumTIntersections_teeing <= 0.3 : Wire (21.0/1.0)
+|   |   |   |   |   NumTIntersections_teeing > 0.3 : Other (2.0)
+ClosedShapeConnections = 1:
+|   Height <= 0.20818 :
+|   |   MaximumSpeed <= 1.29693 :
+|   |   |   SelfEnclosingShape = 1: Wire (10.0)
+|   |   |   SelfEnclosingShape = 0:
+|   |   |   |   MaximumSpeed <= 0.955302 :
+|   |   |   |   |   Width > 0.180668 : Other (8.0)
+|   |   |   |   |   Width <= 0.180668 :
+|   |   |   |   |   |   NumXIntersections > 0 : Wire (4.0)
+|   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   NumTIntersections_teeing > 0.3 : Other (2.0)
+|   |   |   |   |   |   |   NumTIntersections_teeing <= 0.3 :
+|   |   |   |   |   |   |   |   Area <= 0.0123257 : Wire (34.0/7.0)
+|   |   |   |   |   |   |   |   Area > 0.0123257 : Other (4.0)
+|   |   |   |   MaximumSpeed > 0.955302 :
+|   |   |   |   |   Height <= 0.079103 : Text (2.0)
+|   |   |   |   |   Height > 0.079103 : Wire (4.0)
+|   |   MaximumSpeed > 1.29693 :
+|   |   |   Width <= 0.287861 :
+|   |   |   |   SumAbsTheta <= 0.194386 : Wire (2.0)
+|   |   |   |   SumAbsTheta > 0.194386 :
+|   |   |   |   |   NumTIntersections_teeing > 0.1 : Text (8.0)
+|   |   |   |   |   NumTIntersections_teeing <= 0.1 :
+|   |   |   |   |   |   NumTIntersections_into <= 0.1 : Text (6.0/1.0)
+|   |   |   |   |   |   NumTIntersections_into > 0.1 : Other (2.0)
+|   |   |   Width > 0.287861 :
+|   |   |   |   NumTIntersections_teeing <= 0 : Other (13.0)
+|   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   ArcLength <= 0.440369 : Other (7.0/1.0)
+|   |   |   |   |   ArcLength > 0.440369 : Wire (2.0)
+|   Height > 0.20818 :
+|   |   ArcLength <= 0.278177 :
+|   |   |   NumTIntersections_teeing > 0.4 : Wire (3.0/1.0)
+|   |   |   NumTIntersections_teeing <= 0.4 :
+|   |   |   |   AverageSpeed <= 0.613847 :
+|   |   |   |   |   NumSelfIntersections <= 0 : Other (20.0/1.0)
+|   |   |   |   |   NumSelfIntersections > 0 :
+|   |   |   |   |   |   SumTheta <= 0.128709 : Other (3.0)
+|   |   |   |   |   |   SumTheta > 0.128709 : Text (2.0)
+|   |   |   |   AverageSpeed > 0.613847 :
+|   |   |   |   |   NumLIntersections <= 0.2 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Text (19.0/3.0)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   Height <= 0.509724 : Text (5.0)
+|   |   |   |   |   |   |   Height > 0.509724 : Other (4.0)
+|   |   |   |   |   NumLIntersections > 0.2 :
+|   |   |   |   |   |   NumTIntersections_teeing <= 0.1 : Other (9.0)
+|   |   |   |   |   |   NumTIntersections_teeing > 0.1 : Text (5.0/1.0)
+|   |   ArcLength > 0.278177 :
+|   |   |   SelfEnclosingShape = 0:
+|   |   |   |   SumAbsTheta <= 1.01881 :
+|   |   |   |   |   Area > 0.132414 : Other (410.0/2.0)
+|   |   |   |   |   Area <= 0.132414 :
+|   |   |   |   |   |   NumTIntersections_into <= 0.5 :
+|   |   |   |   |   |   |   NumLIntersections > 0.2 : Other (72.0)
+|   |   |   |   |   |   |   NumLIntersections <= 0.2 :
+|   |   |   |   |   |   |   |   Height > 0.787842 : Other (54.0)
+|   |   |   |   |   |   |   |   Height <= 0.787842 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0.1 : Other (4.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   NumXIntersections > 0 : Text (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0 :[S38]
+|   |   |   |   |   |   NumTIntersections_into > 0.5 :
+|   |   |   |   |   |   |   PathDensity <= 0.107865 : Text (4.0)
+|   |   |   |   |   |   |   PathDensity > 0.107865 : Other (3.0)
+|   |   |   |   SumAbsTheta > 1.01881 :
+|   |   |   |   |   PathDensity <= 0.0817268 : Other (42.0/1.0)
+|   |   |   |   |   PathDensity > 0.0817268 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Text (16.0)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   AverageSpeed <= 0.768794 :
+|   |   |   |   |   |   |   |   SumSquaredTheta <= 4.93502 : Other (12.0)
+|   |   |   |   |   |   |   |   SumSquaredTheta > 4.93502 : Wire (2.0)
+|   |   |   |   |   |   |   AverageSpeed > 0.768794 :
+|   |   |   |   |   |   |   |   SumAbsTheta > 1.46888 : Other (4.0)
+|   |   |   |   |   |   |   |   SumAbsTheta <= 1.46888 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 : Text (5.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0.3 : Other (2.0)
+|   |   |   |   |   |   |   |   |   |   NumXIntersections > 0.3 : Text (4.0)
+|   |   |   SelfEnclosingShape = 1:
+|   |   |   |   NumTIntersections_teeing <= 0.3 : Other (5.0/1.0)
+|   |   |   |   NumTIntersections_teeing > 0.3 : Wire (4.0)
+
+
+Subtree [S1]
+
+SumSquaredTheta <= 0.00620448 : Wire (6.0/1.0)
+SumSquaredTheta > 0.00620448 : Other (3.0)
+
+
+Subtree [S2]
+
+NumTIntersections_into > 0 : Wire (2.0)
+NumTIntersections_into <= 0 :
+|   PathDensity <= 0.071193 : Text (2.0)
+|   PathDensity > 0.071193 : Wire (2.0)
+
+
+Subtree [S3]
+
+Width > 0.220864 : Text (15.0)
+Width <= 0.220864 :
+|   SumTheta <= -0.315066 : Other (3.0)
+|   SumTheta > -0.315066 :
+|   |   ArcLength > 0.223787 : Text (5.0)
+|   |   ArcLength <= 0.223787 :
+|   |   |   AverageSpeed <= 0.552091 : Text (2.0)
+|   |   |   AverageSpeed > 0.552091 : Other (2.0)
+
+
+Subtree [S4]
+
+ArcLength <= 0.437315 : Wire (4.0/1.0)
+ArcLength > 0.437315 : Other (2.0)
+
+
+Subtree [S5]
+
+SumSqrtTheta <= 0.74073 : Text (2.0)
+SumSqrtTheta > 0.74073 : Other (9.0/1.0)
+
+
+Subtree [S6]
+
+NumTIntersections_teeing <= 0.1 : Text (11.0/1.0)
+NumTIntersections_teeing > 0.1 : Wire (7.0/1.0)
+
+
+Subtree [S7]
+
+SumTheta <= 0.00872014 : Wire (9.0)
+SumTheta > 0.00872014 :
+|   AverageSpeed <= 0.611614 : Wire (4.0)
+|   AverageSpeed > 0.611614 : Text (4.0)
+
+
+Subtree [S8]
+
+Height <= 0.430465 : Other (4.0/1.0)
+Height > 0.430465 :
+|   SumAbsTheta <= 0.108568 : Other (3.0/1.0)
+|   SumAbsTheta > 0.108568 : Wire (7.0)
+
+
+Subtree [S9]
+
+NumTIntersections_into > 0 : Other (15.0/1.0)
+NumTIntersections_into <= 0 :
+|   NumSelfIntersections > 0 : Other (2.0)
+|   NumSelfIntersections <= 0 :
+|   |   SumSquaredTheta <= 1.18442 : Text (4.0/1.0)
+|   |   SumSquaredTheta > 1.18442 : Other (3.0)
+
+
+Subtree [S10]
+
+NumTIntersections_into > 0 : Other (8.0/1.0)
+NumTIntersections_into <= 0 :
+|   NumLIntersections > 0.2 : Other (7.0/2.0)
+|   NumLIntersections <= 0.2 :
+|   |   NumLIntersections <= 0.1 : Wire (46.0/22.0)
+|   |   NumLIntersections > 0.1 :
+|   |   |   ArcLength > 0.0421683 : Wire (8.0/1.0)
+|   |   |   ArcLength <= 0.0421683 :
+|   |   |   |   SumAbsTheta > 0.0225739 : Other (4.0)
+|   |   |   |   SumAbsTheta <= 0.0225739 :
+|   |   |   |   |   Height <= 0.0101951 : Other (3.0)
+|   |   |   |   |   Height > 0.0101951 : Wire (4.0/1.0)
+
+
+Subtree [S11]
+
+SumTheta <= 0.471779 : Wire (32.0)
+SumTheta > 0.471779 : Other (3.0/1.0)
+
+
+Subtree [S12]
+
+NumLIntersections > 0.2 : Wire (2.0/1.0)
+NumLIntersections <= 0.2 :
+|   SumTheta <= 0.096152 : Wire (5.0/1.0)
+|   SumTheta > 0.096152 : Text (7.0)
+
+
+Subtree [S13]
+
+NumLIntersections > 0.1 : Wire (7.0)
+NumLIntersections <= 0.1 :
+|   NumSelfIntersections > 0 : Wire (2.0)
+|   NumSelfIntersections <= 0 :
+|   |   Height <= 0.604703 : Wire (5.0/1.0)
+|   |   Height > 0.604703 : Other (7.0)
+
+
+Subtree [S14]
+
+NumTIntersections_into > 0 : Other (5.0/1.0)
+NumTIntersections_into <= 0 :
+|   Width > 0.344239 : Other (4.0/1.0)
+|   Width <= 0.344239 :
+|   |   AverageSpeed <= 0.530229 : Wire (4.0/1.0)
+|   |   AverageSpeed > 0.530229 : Text (4.0)
+
+
+Subtree [S15]
+
+ArcLength > 0.737992 : Other (2.0)
+ArcLength <= 0.737992 :
+|   PathDensity <= 0.0629094 : Other (2.0)
+|   PathDensity > 0.0629094 : Text (7.0)
+
+
+Subtree [S16]
+
+NumTIntersections_into > 0.1 : Other (4.0/1.0)
+NumTIntersections_into <= 0.1 :
+|   Width <= 0.323862 :
+|   |   AverageSpeed <= 0.531687 :
+|   |   |   NumXIntersections > 0 : Wire (2.0/1.0)
+|   |   |   NumXIntersections <= 0 :
+|   |   |   |   Width > 0.0232727 : Wire (24.0/2.0)
+|   |   |   |   Width <= 0.0232727 :
+|   |   |   |   |   NumLIntersections <= 0.1 : Wire (3.0/1.0)
+|   |   |   |   |   NumLIntersections > 0.1 : Other (3.0)
+|   |   AverageSpeed > 0.531687 :
+|   |   |   NumXIntersections > 0 : Wire (2.0)
+|   |   |   NumXIntersections <= 0 :
+|   |   |   |   Area <= 0.0342742 : Text (7.0/1.0)
+|   |   |   |   Area > 0.0342742 :
+|   |   |   |   |   NumTIntersections_into > 0 : Other (3.0/1.0)
+|   |   |   |   |   NumTIntersections_into <= 0 :
+|   |   |   |   |   |   AverageSpeed <= 0.649107 : Wire (3.0)
+|   |   |   |   |   |   AverageSpeed > 0.649107 : Other (6.0/1.0)
+|   Width > 0.323862 :
+|   |   MaximumSpeed <= 2.76936 : Wire (40.0/1.0)
+|   |   MaximumSpeed > 2.76936 : Other (3.0/1.0)
+
+
+Subtree [S17]
+
+NumLIntersections <= 0 : Other (4.0/1.0)
+NumLIntersections > 0 : Wire (3.0/1.0)
+
+
+Subtree [S18]
+
+SumSqrtTheta <= 0.441206 : Wire (4.0/1.0)
+SumSqrtTheta > 0.441206 : Text (3.0)
+
+
+Subtree [S19]
+
+SumTheta <= 0.263572 : Text (6.0/1.0)
+SumTheta > 0.263572 : Other (8.0/1.0)
+
+
+Subtree [S20]
+
+Width > 0.268444 : Text (76.0/5.0)
+Width <= 0.268444 :
+|   AverageSpeed > 1.21863 : Text (8.0)
+|   AverageSpeed <= 1.21863 :
+|   |   AverageSpeed > 1.02661 : Other (6.0)
+|   |   AverageSpeed <= 1.02661 :
+|   |   |   NumTIntersections_into <= 0 : Text (5.0)
+|   |   |   NumTIntersections_into > 0 :
+|   |   |   |   NumSelfIntersections <= 0 : Other (3.0)
+|   |   |   |   NumSelfIntersections > 0 : Text (2.0)
+
+
+Subtree [S21]
+
+PathDensity <= 0.0704602 : Other (14.0)
+PathDensity > 0.0704602 : Text (6.0)
+
+
+Subtree [S22]
+
+SumSqrtTheta <= 0.698254 : Text (17.0)
+SumSqrtTheta > 0.698254 :
+|   MaximumSpeed <= 2.05194 : Other (6.0)
+|   MaximumSpeed > 2.05194 : Text (4.0)
+
+
+Subtree [S23]
+
+NumTIntersections_into > 0 : Text (8.0/1.0)
+NumTIntersections_into <= 0 :
+|   ArcLength <= 0.311568 : Text (2.0)
+|   ArcLength > 0.311568 :
+|   |   NumTIntersections_teeing <= 0.1 : Other (5.0/1.0)
+|   |   NumTIntersections_teeing > 0.1 : Wire (2.0)
+
+
+Subtree [S24]
+
+AverageSpeed <= 0.89205 : Wire (4.0)
+AverageSpeed > 0.89205 : Text (4.0)
+
+
+Subtree [S25]
+
+NumXIntersections <= 0 :
+|   NumLIntersections > 0.2 : Other (5.0)
+|   NumLIntersections <= 0.2 :
+|   |   SumSquaredTheta <= 0.126858 : Other (12.0)
+|   |   SumSquaredTheta > 0.126858 :
+|   |   |   NumTIntersections_into <= 0 :
+|   |   |   |   Width > 0.366332 : Other (4.0)
+|   |   |   |   Width <= 0.366332 :
+|   |   |   |   |   NumLIntersections <= 0.1 : Text (10.0/1.0)
+|   |   |   |   |   NumLIntersections > 0.1 :
+|   |   |   |   |   |   AverageSpeed <= 0.94871 : Text (3.0)
+|   |   |   |   |   |   AverageSpeed > 0.94871 : Other (3.0/1.0)
+|   |   |   NumTIntersections_into > 0 :
+|   |   |   |   Area <= 0.0495311 : Other (9.0)
+|   |   |   |   Area > 0.0495311 :
+|   |   |   |   |   Height <= 0.631858 : Text (6.0/1.0)
+|   |   |   |   |   Height > 0.631858 : Other (4.0)
+NumXIntersections > 0 :
+|   MaximumSpeed <= 2.22335 : Wire (2.0/1.0)
+|   MaximumSpeed > 2.22335 : Other (2.0)
+
+
+Subtree [S26]
+
+NumLIntersections <= 0.1 : Text (40.0/2.0)
+NumLIntersections > 0.1 :
+|   ArcLength <= 0.364917 : Text (4.0)
+|   ArcLength > 0.364917 :
+|   |   NumTIntersections_teeing > 0 : Other (3.0)
+|   |   NumTIntersections_teeing <= 0 :
+|   |   |   PathDensity <= 0.0954862 : Other (3.0)
+|   |   |   PathDensity > 0.0954862 : Wire (2.0/1.0)
+
+
+Subtree [S27]
+
+SumSquaredTheta <= 0.703416 : Other (31.0/1.0)
+SumSquaredTheta > 0.703416 :
+|   AverageSpeed <= 1.21195 : Other (4.0)
+|   AverageSpeed > 1.21195 : Text (8.0)
+
+
+Subtree [S28]
+
+NumTIntersections_into > 0 : Other (15.0)
+NumTIntersections_into <= 0 :
+|   AverageSpeed > 1.08222 : Other (3.0)
+|   AverageSpeed <= 1.08222 :
+|   |   Height <= 0.999544 : Other (2.0)
+|   |   Height > 0.999544 : Wire (4.0)
+
+
+Subtree [S29]
+
+NumXIntersections > 0 : Wire (3.0/1.0)
+NumXIntersections <= 0 :
+|   NumTIntersections_teeing <= 0 : Other (12.0/1.0)
+|   NumTIntersections_teeing > 0 :
+|   |   Height <= 1.1859 : Other (4.0)
+|   |   Height > 1.1859 : Wire (3.0)
+
+
+Subtree [S30]
+
+NumXIntersections > 0 : Other (2.0)
+NumXIntersections <= 0 :
+|   PathDensity <= 0.0585152 : Other (43.0/1.0)
+|   PathDensity > 0.0585152 :
+|   |   MaximumSpeed <= 2.6765 : Other (2.0)
+|   |   MaximumSpeed > 2.6765 : Wire (2.0/1.0)
+
+
+Subtree [S31]
+
+NumTIntersections_teeing > 0.2 : Other (4.0)
+NumTIntersections_teeing <= 0.2 :
+|   MaximumSpeed <= 2.59681 : Other (2.0)
+|   MaximumSpeed > 2.59681 : Wire (2.0)
+
+
+Subtree [S32]
+
+NumTIntersections_teeing > 0 : Wire (9.0/1.0)
+NumTIntersections_teeing <= 0 :
+|   SumAbsTheta > 0.290945 : Other (6.0)
+|   SumAbsTheta <= 0.290945 :
+|   |   NumLIntersections > 0.1 : Wire (2.0)
+|   |   NumLIntersections <= 0.1 :
+|   |   |   PathDensity <= 0.44605 : Text (2.0/1.0)
+|   |   |   PathDensity > 0.44605 : Wire (3.0)
+
+
+Subtree [S33]
+
+NumTIntersections_into <= 0.1 : Wire (24.0/7.0)
+NumTIntersections_into > 0.1 : Other (4.0/1.0)
+
+
+Subtree [S34]
+
+NumXIntersections > 0.2 : Wire (10.0)
+NumXIntersections <= 0.2 :
+|   NumLIntersections > 0.2 : Other (2.0)
+|   NumLIntersections <= 0.2 :
+|   |   NumTIntersections_teeing > 0.1 : Wire (6.0/1.0)
+|   |   NumTIntersections_teeing <= 0.1 :
+|   |   |   Area <= 0.376203 : Wire (4.0)
+|   |   |   Area > 0.376203 : Other (6.0/2.0)
+
+
+Subtree [S35]
+
+NumTIntersections_into > 0.1 : Other (3.0)
+NumTIntersections_into <= 0.1 :
+|   SumSquaredTheta <= 0.838836 : Other (5.0)
+|   SumSquaredTheta > 0.838836 :
+|   |   AverageSpeed <= 0.904118 : Other (3.0/1.0)
+|   |   AverageSpeed > 0.904118 : Wire (3.0)
+
+
+Subtree [S36]
+
+NumTIntersections_teeing > 0.1 : Wire (4.0)
+NumTIntersections_teeing <= 0.1 :
+|   NumXIntersections > 0 : Wire (4.0)
+|   NumXIntersections <= 0 :
+|   |   NumTIntersections_into <= 0 : Wire (5.0/1.0)
+|   |   NumTIntersections_into > 0 : Other (2.0)
+
+
+Subtree [S37]
+
+NumTIntersections_into > 0 : Other (10.0)
+NumTIntersections_into <= 0 :
+|   MaximumSpeed <= 3.60198 : Other (4.0)
+|   MaximumSpeed > 3.60198 : Wire (3.0)
+
+
+Subtree [S38]
+
+NumTIntersections_teeing > 0 : Other (6.0/1.0)
+NumTIntersections_teeing <= 0 :
+|   NumTIntersections_into <= 0 :
+|   |   PathDensity <= 0.0574683 : Other (3.0)
+|   |   PathDensity > 0.0574683 : Text (6.0/1.0)
+|   NumTIntersections_into > 0 :
+|   |   NumSelfIntersections > 0 : Other (2.0)
+|   |   NumSelfIntersections <= 0 :
+|   |   |   SumSqrtTheta > 0.811822 : Other (5.0)
+|   |   |   SumSqrtTheta <= 0.811822 :
+|   |   |   |   Height <= 0.563565 : Text (3.0)
+|   |   |   |   Height > 0.563565 : Other (2.0)
+
+
+Simplified Decision Tree:
+
+ClosedShapeConnections = 0:
+|   Width <= 0.765252 :
+|   |   Area > 1.11302 : Wire (92.0/2.6)
+|   |   Area <= 1.11302 :
+|   |   |   PathDensity <= 0.230926 :
+|   |   |   |   SelfEnclosingShape = 0:
+|   |   |   |   |   AverageSpeed <= 0.836342 :
+|   |   |   |   |   |   SumTheta <= 0.606761 :
+|   |   |   |   |   |   |   NumLIntersections <= 0 :
+|   |   |   |   |   |   |   |   Width <= 0.478455 :
+|   |   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   Width <= 0.052301 :
+|   |   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.0478406 : Other (8.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.0478406 :[S1]
+|   |   |   |   |   |   |   |   |   |   |   Width > 0.052301 :
+|   |   |   |   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 0.428121 :[S2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 0.428121 :[S3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumXIntersections > 0 :[S4]
+|   |   |   |   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.1 :[S5]
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.0624976 :[S6]
+|   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.0624976 :
+|   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.135664 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   SumTheta <= 0.00872014 : Wire (9.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SumTheta > 0.00872014 :[S7]
+|   |   |   |   |   |   |   |   |   |   |   |   Height > 0.135664 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.430465 : Other (7.0/2.4)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height > 0.430465 :[S8]
+|   |   |   |   |   |   |   |   |   NumSelfIntersections > 0 :
+|   |   |   |   |   |   |   |   |   |   Width <= 0.14076 : Other (3.0/2.1)
+|   |   |   |   |   |   |   |   |   |   Width > 0.14076 : Text (14.0/1.3)
+|   |   |   |   |   |   |   |   Width > 0.478455 :
+|   |   |   |   |   |   |   |   |   ArcLength <= 0.875004 : Wire (23.0/1.3)
+|   |   |   |   |   |   |   |   |   ArcLength > 0.875004 : Other (4.0/2.2)
+|   |   |   |   |   |   |   NumLIntersections > 0 :
+|   |   |   |   |   |   |   |   SumTheta <= -0.417988 :
+|   |   |   |   |   |   |   |   |   NumSelfIntersections > 0.1 : Text (3.0/2.1)
+|   |   |   |   |   |   |   |   |   NumSelfIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   PathDensity <= 0.154407 : Other (24.0/6.0)
+|   |   |   |   |   |   |   |   |   |   PathDensity > 0.154407 :
+|   |   |   |   |   |   |   |   |   |   |   ArcLength <= 0.407967 : Other (4.0/2.2)
+|   |   |   |   |   |   |   |   |   |   |   ArcLength > 0.407967 : Wire (4.0/1.2)
+|   |   |   |   |   |   |   |   SumTheta > -0.417988 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   SumSquaredTheta <= 1.22576 :
+|   |   |   |   |   |   |   |   |   |   |   |   Width <= 0.0943852 :[S9]
+|   |   |   |   |   |   |   |   |   |   |   |   Width > 0.0943852 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 0.562656 :[S10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 0.562656 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ArcLength <= 0.268667 :[S11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ArcLength > 0.268667 :[S12]
+|   |   |   |   |   |   |   |   |   |   |   SumSquaredTheta > 1.22576 :[S13]
+|   |   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   Height > 0.68869 : Other (8.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   Height <= 0.68869 :
+|   |   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta <= 0.679175 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta > 0.679175 :[S14]
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   PathDensity <= 0.101736 :[S15]
+|   |   |   |   |   |   |   |   |   |   PathDensity > 0.101736 :
+|   |   |   |   |   |   |   |   |   |   |   Height > 0.0229794 : Wire (79.0/2.6)
+|   |   |   |   |   |   |   |   |   |   |   Height <= 0.0229794 :
+|   |   |   |   |   |   |   |   |   |   |   |   SumTheta <= 0.00872014 : Other (3.0/1.1)
+|   |   |   |   |   |   |   |   |   |   |   |   SumTheta > 0.00872014 : Wire (2.0/1.0)
+|   |   |   |   |   |   SumTheta > 0.606761 :
+|   |   |   |   |   |   |   Height <= 0.144002 : Wire (5.0/2.3)
+|   |   |   |   |   |   |   Height > 0.144002 :
+|   |   |   |   |   |   |   |   SumSquaredTheta <= 1.26563 : Other (35.0/3.8)
+|   |   |   |   |   |   |   |   SumSquaredTheta > 1.26563 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.3 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.3 :
+|   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0 : Text (3.0/1.1)
+|   |   |   |   |   |   |   |   |   |   NumLIntersections > 0 : Wire (3.0/1.1)
+|   |   |   |   |   AverageSpeed > 0.836342 :
+|   |   |   |   |   |   Height <= 0.186033 :
+|   |   |   |   |   |   |   ArcLength <= 0.317665 :
+|   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0.1 :
+|   |   |   |   |   |   |   |   |   Area > 0.0426854 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   Area <= 0.0426854 :
+|   |   |   |   |   |   |   |   |   |   ArcLength > 0.253042 : Wire (10.0/2.4)
+|   |   |   |   |   |   |   |   |   |   ArcLength <= 0.253042 :
+|   |   |   |   |   |   |   |   |   |   |   SumTheta > 0.22143 : Text (7.0/1.3)
+|   |   |   |   |   |   |   |   |   |   |   SumTheta <= 0.22143 :
+|   |   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta <= 0.441206 : Wire (13.0/6.7)
+|   |   |   |   |   |   |   |   |   |   |   |   SumSqrtTheta > 0.441206 : Text (3.0/1.1)
+|   |   |   |   |   |   |   |   NumTIntersections_teeing > 0.1 :
+|   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 : Text (37.0/2.6)
+|   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Wire (2.0/1.8)
+|   |   |   |   |   |   |   ArcLength > 0.317665 :
+|   |   |   |   |   |   |   |   PathDensity <= 0.182395 : Wire (28.0/1.4)
+|   |   |   |   |   |   |   |   PathDensity > 0.182395 : Other (3.0/2.1)
+|   |   |   |   |   |   Height > 0.186033 :
+|   |   |   |   |   |   |   NumXIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   NumLIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   Width <= 0.0808854 :
+|   |   |   |   |   |   |   |   |   |   Area <= 0.0425873 : Text (6.0/2.3)
+|   |   |   |   |   |   |   |   |   |   Area > 0.0425873 : Wire (6.0/1.2)
+|   |   |   |   |   |   |   |   |   Width > 0.0808854 :
+|   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 1.51728 : Text (48.0/1.4)
+|   |   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 1.51728 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 1.20752 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.310676 :[S16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Height > 0.310676 :[S17]
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height > 1.20752 :[S18]
+|   |   |   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   Area > 0.247717 : Wire (5.0/2.3)
+|   |   |   |   |   |   |   |   |   |   |   |   Area <= 0.247717 :[S19]
+|   |   |   |   |   |   |   |   |   |   NumXIntersections > 0 :[S20]
+|   |   |   |   |   |   |   |   NumLIntersections > 0 :
+|   |   |   |   |   |   |   |   |   SumAbsTheta <= 1.01162 :
+|   |   |   |   |   |   |   |   |   |   Width <= 0.466276 :
+|   |   |   |   |   |   |   |   |   |   |   Height <= 0.92218 :
+|   |   |   |   |   |   |   |   |   |   |   |   Width <= 0.03826 :[S21]
+|   |   |   |   |   |   |   |   |   |   |   |   Width > 0.03826 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   MaximumSpeed <= 2.54191 :[S22]
+|   |   |   |   |   |   |   |   |   |   |   |   |   MaximumSpeed > 2.54191 :[S23]
+|   |   |   |   |   |   |   |   |   |   |   Height > 0.92218 :
+|   |   |   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 :[S24]
+|   |   |   |   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height > 1.53739 : Wire (6.0/2.3)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Height <= 1.53739 :[S25]
+|   |   |   |   |   |   |   |   |   |   Width > 0.466276 :
+|   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 1.10389 : Other (49.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 1.10389 :
+|   |   |   |   |   |   |   |   |   |   |   |   Height <= 0.60157 : Wire (8.0/2.4)
+|   |   |   |   |   |   |   |   |   |   |   |   Height > 0.60157 :[S26]
+|   |   |   |   |   |   |   |   |   SumAbsTheta > 1.01162 :
+|   |   |   |   |   |   |   |   |   |   SumSqrtTheta <= 2.04686 : Text (23.0/1.3)
+|   |   |   |   |   |   |   |   |   |   SumSqrtTheta > 2.04686 :
+|   |   |   |   |   |   |   |   |   |   |   SumTheta <= -0.727894 : Text (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SumTheta > -0.727894 : Other (5.0/1.2)
+|   |   |   |   |   |   |   NumXIntersections > 0.1 :
+|   |   |   |   |   |   |   |   Height > 2.28268 : Wire (9.0/1.3)
+|   |   |   |   |   |   |   |   Height <= 2.28268 :
+|   |   |   |   |   |   |   |   |   SumSquaredTheta <= 0.223853 : Text (3.0/2.1)
+|   |   |   |   |   |   |   |   |   SumSquaredTheta > 0.223853 : Other (23.0/3.7)
+|   |   |   |   SelfEnclosingShape = 1:
+|   |   |   |   |   PathDensity <= 0.190009 : Other (141.0/2.6)
+|   |   |   |   |   PathDensity > 0.190009 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Text (2.0/1.0)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   NumXIntersections <= 0.3 : Other (5.0/2.3)
+|   |   |   |   |   |   |   NumXIntersections > 0.3 : Wire (2.0/1.0)
+|   |   |   PathDensity > 0.230926 :
+|   |   |   |   Height <= 0.243234 : Wire (160.0/9.6)
+|   |   |   |   Height > 0.243234 :
+|   |   |   |   |   Height <= 1.29237 :
+|   |   |   |   |   |   SumAbsTheta > 2.28112 : Wire (13.0/1.3)
+|   |   |   |   |   |   SumAbsTheta <= 2.28112 :
+|   |   |   |   |   |   |   SumSquaredTheta > 1.84451 : Text (11.0/3.6)
+|   |   |   |   |   |   |   SumSquaredTheta <= 1.84451 :
+|   |   |   |   |   |   |   |   AverageSpeed > 1.37707 : Text (5.0/2.3)
+|   |   |   |   |   |   |   |   AverageSpeed <= 1.37707 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0 :[S27]
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Other (11.0/1.3)
+|   |   |   |   |   |   |   |   |   |   NumLIntersections <= 0.1 :
+|   |   |   |   |   |   |   |   |   |   |   SumAbsTheta <= 1.38541 : Other (10.0/2.4)
+|   |   |   |   |   |   |   |   |   |   |   SumAbsTheta > 1.38541 : Wire (3.0/1.1)
+|   |   |   |   |   Height > 1.29237 :
+|   |   |   |   |   |   MaximumSpeed <= 3.86307 : Wire (34.0/1.4)
+|   |   |   |   |   |   MaximumSpeed > 3.86307 :
+|   |   |   |   |   |   |   SumAbsTheta <= 0.345497 : Wire (3.0/1.1)
+|   |   |   |   |   |   |   SumAbsTheta > 0.345497 : Other (2.0/1.0)
+|   Width > 0.765252 :
+|   |   SelfEnclosingShape = 1: Other (27.0/1.4)
+|   |   SelfEnclosingShape = 0:
+|   |   |   Width > 2.0038 : Wire (485.0/13.0)
+|   |   |   Width <= 2.0038 :
+|   |   |   |   NumTIntersections_teeing <= 0 :
+|   |   |   |   |   Height <= 0.473381 : Wire (85.0/10.6)
+|   |   |   |   |   Height > 0.473381 :
+|   |   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   |   PathDensity <= 0.0474459 :
+|   |   |   |   |   |   |   |   ArcLength <= 0.741164 : Other (14.0/1.3)
+|   |   |   |   |   |   |   |   ArcLength > 0.741164 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.1 : Wire (28.0/9.2)
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.1 : Other (4.0/2.2)
+|   |   |   |   |   |   |   PathDensity > 0.0474459 :
+|   |   |   |   |   |   |   |   AverageSpeed <= 0.636983 :
+|   |   |   |   |   |   |   |   |   AverageSpeed <= 0.573773 : Other (4.0/1.2)
+|   |   |   |   |   |   |   |   |   AverageSpeed > 0.573773 : Wire (3.0/1.1)
+|   |   |   |   |   |   |   |   AverageSpeed > 0.636983 :
+|   |   |   |   |   |   |   |   |   Width > 0.854207 : Other (34.0/1.4)
+|   |   |   |   |   |   |   |   |   Width <= 0.854207 :
+|   |   |   |   |   |   |   |   |   |   AverageSpeed <= 1.55703 : Other (3.0/1.1)
+|   |   |   |   |   |   |   |   |   |   AverageSpeed > 1.55703 : Text (2.0/1.0)
+|   |   |   |   |   |   NumXIntersections > 0 :
+|   |   |   |   |   |   |   AverageSpeed <= 1.24388 : Wire (28.0/2.6)
+|   |   |   |   |   |   |   AverageSpeed > 1.24388 :
+|   |   |   |   |   |   |   |   NumLIntersections <= 0 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   |   NumLIntersections > 0 : Other (5.0/2.3)
+|   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   AverageSpeed <= 1.37707 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 :
+|   |   |   |   |   |   |   PathDensity > 0.0323698 : Wire (267.0/3.8)
+|   |   |   |   |   |   |   PathDensity <= 0.0323698 :
+|   |   |   |   |   |   |   |   NumLIntersections <= 0.1 : Wire (6.0/1.2)
+|   |   |   |   |   |   |   |   NumLIntersections > 0.1 : Other (7.0/2.4)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   SumTheta <= 0.317588 : Wire (100.0/12.8)
+|   |   |   |   |   |   |   SumTheta > 0.317588 :
+|   |   |   |   |   |   |   |   NumSelfIntersections > 0 : Wire (4.0/1.2)
+|   |   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_into > 0.3 : Wire (3.0/1.1)
+|   |   |   |   |   |   |   |   |   NumTIntersections_into <= 0.3 :
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta <= 0.838836 : Other (7.0/1.3)
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta > 0.838836 :
+|   |   |   |   |   |   |   |   |   |   |   AverageSpeed <= 0.904118 : Other (3.0/2.1)
+|   |   |   |   |   |   |   |   |   |   |   AverageSpeed > 0.904118 : Wire (4.0/2.2)
+|   |   |   |   |   AverageSpeed > 1.37707 :
+|   |   |   |   |   |   Area <= 0.207076 : Wire (20.0/1.3)
+|   |   |   |   |   |   Area > 0.207076 :
+|   |   |   |   |   |   |   NumSelfIntersections > 0 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   NumSelfIntersections <= 0 :
+|   |   |   |   |   |   |   |   NumTIntersections_teeing > 0.4 : Other (3.0/1.1)
+|   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0.4 :
+|   |   |   |   |   |   |   |   |   NumLIntersections > 0.2 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   NumLIntersections <= 0.2 :
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta <= 0.514054 : Wire (15.0/4.7)
+|   |   |   |   |   |   |   |   |   |   SumSquaredTheta > 0.514054 :
+|   |   |   |   |   |   |   |   |   |   |   PathDensity <= 0.0344471 : Wire (3.0/1.1)
+|   |   |   |   |   |   |   |   |   |   |   PathDensity > 0.0344471 :[S28]
+ClosedShapeConnections = 1:
+|   Height <= 0.20818 :
+|   |   MaximumSpeed <= 1.29693 :
+|   |   |   MaximumSpeed <= 0.955302 :
+|   |   |   |   Width > 0.180668 : Other (9.0/2.4)
+|   |   |   |   Width <= 0.180668 :
+|   |   |   |   |   NumXIntersections > 0 : Wire (7.0/1.3)
+|   |   |   |   |   NumXIntersections <= 0 :
+|   |   |   |   |   |   NumTIntersections_teeing > 0.3 : Other (2.0/1.0)
+|   |   |   |   |   |   NumTIntersections_teeing <= 0.3 :
+|   |   |   |   |   |   |   Area <= 0.0123257 : Wire (34.0/9.3)
+|   |   |   |   |   |   |   Area > 0.0123257 : Other (4.0/1.2)
+|   |   |   MaximumSpeed > 0.955302 :
+|   |   |   |   Height <= 0.079103 : Text (2.0/1.0)
+|   |   |   |   Height > 0.079103 : Wire (10.0/1.3)
+|   |   MaximumSpeed > 1.29693 :
+|   |   |   Width <= 0.287861 :
+|   |   |   |   SumAbsTheta <= 0.194386 : Wire (2.0/1.0)
+|   |   |   |   SumAbsTheta > 0.194386 :
+|   |   |   |   |   NumTIntersections_teeing > 0.1 : Text (8.0/1.3)
+|   |   |   |   |   NumTIntersections_teeing <= 0.1 :
+|   |   |   |   |   |   NumTIntersections_into <= 0.1 : Text (6.0/2.3)
+|   |   |   |   |   |   NumTIntersections_into > 0.1 : Other (2.0/1.0)
+|   |   |   Width > 0.287861 :
+|   |   |   |   NumTIntersections_teeing <= 0 : Other (13.0/1.3)
+|   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   ArcLength <= 0.440369 : Other (7.0/2.4)
+|   |   |   |   |   ArcLength > 0.440369 : Wire (2.0/1.0)
+|   Height > 0.20818 :
+|   |   ArcLength <= 0.278177 :
+|   |   |   NumTIntersections_teeing > 0.4 : Wire (3.0/2.1)
+|   |   |   NumTIntersections_teeing <= 0.4 :
+|   |   |   |   AverageSpeed <= 0.613847 :
+|   |   |   |   |   NumSelfIntersections <= 0 : Other (20.0/2.5)
+|   |   |   |   |   NumSelfIntersections > 0 :
+|   |   |   |   |   |   SumTheta <= 0.128709 : Other (3.0/1.1)
+|   |   |   |   |   |   SumTheta > 0.128709 : Text (2.0/1.0)
+|   |   |   |   AverageSpeed > 0.613847 :
+|   |   |   |   |   NumLIntersections <= 0.2 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Text (19.0/4.8)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   Height <= 0.509724 : Text (5.0/1.2)
+|   |   |   |   |   |   |   Height > 0.509724 : Other (4.0/1.2)
+|   |   |   |   |   NumLIntersections > 0.2 :
+|   |   |   |   |   |   NumTIntersections_teeing <= 0.1 : Other (9.0/1.3)
+|   |   |   |   |   |   NumTIntersections_teeing > 0.1 : Text (5.0/2.3)
+|   |   ArcLength > 0.278177 :
+|   |   |   SelfEnclosingShape = 0:
+|   |   |   |   SumAbsTheta <= 1.01881 :
+|   |   |   |   |   Area > 0.132414 : Other (410.0/3.9)
+|   |   |   |   |   Area <= 0.132414 :
+|   |   |   |   |   |   NumTIntersections_into <= 0.5 : Other (160.0/14.0)
+|   |   |   |   |   |   NumTIntersections_into > 0.5 :
+|   |   |   |   |   |   |   PathDensity <= 0.107865 : Text (4.0/1.2)
+|   |   |   |   |   |   |   PathDensity > 0.107865 : Other (3.0/1.1)
+|   |   |   |   SumAbsTheta > 1.01881 :
+|   |   |   |   |   PathDensity <= 0.0817268 : Other (42.0/2.6)
+|   |   |   |   |   PathDensity > 0.0817268 :
+|   |   |   |   |   |   NumTIntersections_into <= 0 : Text (16.0/1.3)
+|   |   |   |   |   |   NumTIntersections_into > 0 :
+|   |   |   |   |   |   |   AverageSpeed <= 0.768794 :
+|   |   |   |   |   |   |   |   SumSquaredTheta <= 4.93502 : Other (12.0/1.3)
+|   |   |   |   |   |   |   |   SumSquaredTheta > 4.93502 : Wire (2.0/1.0)
+|   |   |   |   |   |   |   AverageSpeed > 0.768794 :
+|   |   |   |   |   |   |   |   SumAbsTheta > 1.46888 : Other (4.0/1.2)
+|   |   |   |   |   |   |   |   SumAbsTheta <= 1.46888 :
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing <= 0 : Text (5.0/1.2)
+|   |   |   |   |   |   |   |   |   NumTIntersections_teeing > 0 :
+|   |   |   |   |   |   |   |   |   |   NumXIntersections <= 0.3 : Other (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   NumXIntersections > 0.3 : Text (4.0/1.2)
+|   |   |   SelfEnclosingShape = 1:
+|   |   |   |   NumTIntersections_teeing <= 0.3 : Other (5.0/2.3)
+|   |   |   |   NumTIntersections_teeing > 0.3 : Wire (4.0/1.2)
+
+
+Subtree [S1]
+
+SumSquaredTheta <= 0.00620448 : Wire (6.0/2.3)
+SumSquaredTheta > 0.00620448 : Other (3.0/1.1)
+
+
+Subtree [S2]
+
+NumTIntersections_into > 0 : Wire (2.0/1.0)
+NumTIntersections_into <= 0 :
+|   PathDensity <= 0.071193 : Text (2.0/1.0)
+|   PathDensity > 0.071193 : Wire (2.0/1.0)
+
+
+Subtree [S3]
+
+Width > 0.220864 : Text (15.0/1.3)
+Width <= 0.220864 :
+|   SumTheta <= -0.315066 : Other (3.0/1.1)
+|   SumTheta > -0.315066 :
+|   |   ArcLength > 0.223787 : Text (5.0/1.2)
+|   |   ArcLength <= 0.223787 :
+|   |   |   AverageSpeed <= 0.552091 : Text (2.0/1.0)
+|   |   |   AverageSpeed > 0.552091 : Other (2.0/1.0)
+
+
+Subtree [S4]
+
+ArcLength <= 0.437315 : Wire (4.0/2.2)
+ArcLength > 0.437315 : Other (2.0/1.0)
+
+
+Subtree [S5]
+
+SumSqrtTheta <= 0.74073 : Text (2.0/1.0)
+SumSqrtTheta > 0.74073 : Other (9.0/2.4)
+
+
+Subtree [S6]
+
+NumTIntersections_teeing <= 0.1 : Text (11.0/2.5)
+NumTIntersections_teeing > 0.1 : Wire (7.0/2.4)
+
+
+Subtree [S7]
+
+AverageSpeed <= 0.611614 : Wire (4.0/1.2)
+AverageSpeed > 0.611614 : Text (4.0/1.2)
+
+
+Subtree [S8]
+
+SumAbsTheta <= 0.108568 : Other (3.0/2.1)
+SumAbsTheta > 0.108568 : Wire (7.0/1.3)
+
+
+Subtree [S9]
+
+NumTIntersections_into > 0 : Other (8.0/2.4)
+NumTIntersections_into <= 0 :
+|   NumLIntersections > 0.2 : Other (7.0/3.4)
+|   NumLIntersections <= 0.2 :
+|   |   NumLIntersections <= 0.1 : Wire (46.0/24.8)
+|   |   NumLIntersections > 0.1 :
+|   |   |   ArcLength > 0.0421683 : Wire (8.0/2.4)
+|   |   |   ArcLength <= 0.0421683 :
+|   |   |   |   SumAbsTheta > 0.0225739 : Other (4.0/1.2)
+|   |   |   |   SumAbsTheta <= 0.0225739 :
+|   |   |   |   |   Height <= 0.0101951 : Other (3.0/1.1)
+|   |   |   |   |   Height > 0.0101951 : Wire (4.0/2.2)
+
+
+Subtree [S10]
+
+SumTheta <= 0.471779 : Wire (32.0/1.4)
+SumTheta > 0.471779 : Other (3.0/2.1)
+
+
+Subtree [S11]
+
+SumTheta <= 0.096152 : Wire (7.0/3.4)
+SumTheta > 0.096152 : Text (7.0/1.3)
+
+
+Subtree [S12]
+
+NumLIntersections > 0.1 : Wire (7.0/1.3)
+NumLIntersections <= 0.1 :
+|   NumSelfIntersections > 0 : Wire (2.0/1.0)
+|   NumSelfIntersections <= 0 :
+|   |   Height <= 0.604703 : Wire (5.0/2.3)
+|   |   Height > 0.604703 : Other (7.0/1.3)
+
+
+Subtree [S13]
+
+NumTIntersections_into > 0 : Other (5.0/2.3)
+NumTIntersections_into <= 0 :
+|   Width > 0.344239 : Other (4.0/2.2)
+|   Width <= 0.344239 :
+|   |   AverageSpeed <= 0.530229 : Wire (4.0/2.2)
+|   |   AverageSpeed > 0.530229 : Text (4.0/1.2)
+
+
+Subtree [S14]
+
+ArcLength > 0.737992 : Other (2.0/1.0)
+ArcLength <= 0.737992 :
+|   PathDensity <= 0.0629094 : Other (2.0/1.0)
+|   PathDensity > 0.0629094 : Text (7.0/1.3)
+
+
+Subtree [S15]
+
+NumTIntersections_into > 0.1 : Other (6.0/2.3)
+NumTIntersections_into <= 0.1 :
+|   Width <= 0.323862 :
+|   |   AverageSpeed <= 0.531687 :
+|   |   |   Width > 0.0232727 : Wire (29.0/6.0)
+|   |   |   Width <= 0.0232727 :
+|   |   |   |   NumLIntersections <= 0.1 : Wire (3.0/2.1)
+|   |   |   |   NumLIntersections > 0.1 : Other (3.0/1.1)
+|   |   AverageSpeed > 0.531687 :
+|   |   |   NumXIntersections > 0 : Wire (2.0/1.0)
+|   |   |   NumXIntersections <= 0 :
+|   |   |   |   Area <= 0.0342742 : Text (7.0/2.4)
+|   |   |   |   Area > 0.0342742 :
+|   |   |   |   |   NumTIntersections_into > 0 : Other (3.0/2.1)
+|   |   |   |   |   NumTIntersections_into <= 0 :
+|   |   |   |   |   |   AverageSpeed <= 0.649107 : Wire (3.0/1.1)
+|   |   |   |   |   |   AverageSpeed > 0.649107 : Other (6.0/2.3)
+|   Width > 0.323862 :
+|   |   MaximumSpeed <= 2.76936 : Wire (40.0/2.6)
+|   |   MaximumSpeed > 2.76936 : Other (3.0/2.1)
+
+
+Subtree [S16]
+
+SumTheta <= 0.263572 : Text (6.0/2.3)
+SumTheta > 0.263572 : Other (8.0/2.4)
+
+
+Subtree [S17]
+
+Width > 0.268444 : Text (76.0/7.3)
+Width <= 0.268444 :
+|   AverageSpeed > 1.21863 : Text (8.0/1.3)
+|   AverageSpeed <= 1.21863 :
+|   |   AverageSpeed > 1.02661 : Other (6.0/1.2)
+|   |   AverageSpeed <= 1.02661 :
+|   |   |   NumTIntersections_into <= 0 : Text (5.0/1.2)
+|   |   |   NumTIntersections_into > 0 :
+|   |   |   |   NumSelfIntersections <= 0 : Other (3.0/1.1)
+|   |   |   |   NumSelfIntersections > 0 : Text (2.0/1.0)
+
+
+Subtree [S18]
+
+PathDensity <= 0.0704602 : Other (14.0/1.3)
+PathDensity > 0.0704602 : Text (6.0/1.2)
+
+
+Subtree [S19]
+
+SumSqrtTheta <= 0.698254 : Text (17.0/1.3)
+SumSqrtTheta > 0.698254 :
+|   MaximumSpeed <= 2.05194 : Other (6.0/1.2)
+|   MaximumSpeed > 2.05194 : Text (4.0/1.2)
+
+
+Subtree [S20]
+
+NumTIntersections_into > 0 : Text (8.0/2.4)
+NumTIntersections_into <= 0 :
+|   ArcLength <= 0.311568 : Text (2.0/1.0)
+|   ArcLength > 0.311568 :
+|   |   NumTIntersections_teeing <= 0.1 : Other (5.0/2.3)
+|   |   NumTIntersections_teeing > 0.1 : Wire (2.0/1.0)
+
+
+Subtree [S21]
+
+AverageSpeed <= 0.89205 : Wire (4.0/1.2)
+AverageSpeed > 0.89205 : Text (4.0/1.2)
+
+
+Subtree [S22]
+
+SumSquaredTheta <= 0.126858 : Other (15.0/2.5)
+SumSquaredTheta > 0.126858 :
+|   NumTIntersections_into <= 0 :
+|   |   Width <= 0.366332 : Text (16.0/4.8)
+|   |   Width > 0.366332 : Other (4.0/1.2)
+|   NumTIntersections_into > 0 :
+|   |   Area <= 0.0495311 : Other (14.0/2.5)
+|   |   Area > 0.0495311 :
+|   |   |   Height <= 0.631858 : Text (7.0/3.4)
+|   |   |   Height > 0.631858 : Other (4.0/1.2)
+
+
+Subtree [S23]
+
+NumLIntersections <= 0.1 : Text (40.0/3.8)
+NumLIntersections > 0.1 :
+|   ArcLength <= 0.364917 : Text (4.0/1.2)
+|   ArcLength > 0.364917 : Other (8.0/3.5)
+
+
+Subtree [S24]
+
+SumSquaredTheta <= 0.703416 : Other (31.0/2.6)
+SumSquaredTheta > 0.703416 :
+|   AverageSpeed <= 1.21195 : Other (4.0/1.2)
+|   AverageSpeed > 1.21195 : Text (8.0/1.3)
+
+
+Subtree [S25]
+
+NumTIntersections_into > 0 : Other (15.0/1.3)
+NumTIntersections_into <= 0 :
+|   AverageSpeed > 1.08222 : Other (3.0/1.1)
+|   AverageSpeed <= 1.08222 :
+|   |   Height <= 0.999544 : Other (2.0/1.0)
+|   |   Height > 0.999544 : Wire (4.0/1.2)
+
+
+Subtree [S26]
+
+NumTIntersections_teeing <= 0 : Other (14.0/3.6)
+NumTIntersections_teeing > 0 :
+|   Height <= 1.1859 : Other (4.0/1.2)
+|   Height > 1.1859 : Wire (4.0/1.2)
+
+
+Subtree [S27]
+
+NumTIntersections_teeing > 0 : Wire (9.0/2.4)
+NumTIntersections_teeing <= 0 :
+|   SumAbsTheta <= 0.290945 : Wire (7.0/3.4)
+|   SumAbsTheta > 0.290945 : Other (6.0/1.2)
+
+
+Subtree [S28]
+
+NumTIntersections_into > 0 : Other (10.0/1.3)
+NumTIntersections_into <= 0 :
+|   MaximumSpeed <= 3.60198 : Other (4.0/1.2)
+|   MaximumSpeed > 3.60198 : Wire (3.0/1.1)
+
+
+Tree saved
+
+
+Evaluation on training data (3862 items):
+
+	 Before Pruning           After Pruning
+	----------------   ---------------------------
+	Size      Errors   Size      Errors   Estimate
+
+	 577  157( 4.1%)    441  200( 5.2%)    (12.7%)   <<
+
+Evaluation on test data (1075 items):
+
+	 Before Pruning           After Pruning
+	----------------   ---------------------------
+	Size      Errors   Size      Errors   Estimate
+
+	 577  215(20.0%)    441  207(19.3%)    (12.7%)   <<
+
+
+	  (a)  (b)  (c)	<-classified as
+	 ---- ---- ----
+	  424   11   27	(a): class Wire
+	   28   78   29	(b): class Text
+	   65   47  366	(c): class Other
+

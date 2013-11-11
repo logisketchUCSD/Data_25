@@ -1,0 +1,81 @@
+iso-iso: and,0.875,1.0,1.0,0.75
+,=AVERAGE(B1:E1),=STDEV(B1:E1)
+
+iso-iso: or,0.75,0.875,1.0,1.0
+,=AVERAGE(B4:E4),=STDEV(B4:E4)
+
+iso-iso: not,1.0,1.0,0.875,1.0
+,=AVERAGE(B7:E7),=STDEV(B7:E7)
+
+iso-copy: and,1.0,1.0,1.0,1.0
+,=AVERAGE(B10:E10),=STDEV(B10:E10)
+
+iso-copy: or,1.0,0.333333333333,1.0,1.0
+,=AVERAGE(B13:E13),=STDEV(B13:E13)
+
+iso-copy: not,1.0,1.0,1.0,1.0
+,=AVERAGE(B16:E16),=STDEV(B16:E16)
+
+iso-synth: and,1.0,0.833333333333,1.0,1.0
+,=AVERAGE(B19:E19),=STDEV(B19:E19)
+
+iso-synth: or,0.8,0.75,1.0,1.0
+,=AVERAGE(B22:E22),=STDEV(B22:E22)
+
+iso-synth: not,0.0,na,na,1.0
+,=AVERAGE(B25:E25),=STDEV(B25:E25)
+
+copy-iso: and,0.8,0.9,1.0,0.7
+,=AVERAGE(B28:E28),=STDEV(B28:E28)
+
+copy-iso: or,0.9,1.0,1.0,1.0
+,=AVERAGE(B31:E31),=STDEV(B31:E31)
+
+copy-iso: not,1.0,1.0,0.8,1.0
+,=AVERAGE(B34:E34),=STDEV(B34:E34)
+
+copy-copy: and,1.0,1.0,1.0,1.0
+,=AVERAGE(B37:E37),=STDEV(B37:E37)
+
+copy-copy: or,1.0,1.0,1.0,1.0
+,=AVERAGE(B40:E40),=STDEV(B40:E40)
+
+copy-copy: not,1.0,1.0,1.0,1.0
+,=AVERAGE(B43:E43),=STDEV(B43:E43)
+
+copy-synth: and,0.833333333333,0.833333333333,1.0,0.8
+,=AVERAGE(B46:E46),=STDEV(B46:E46)
+
+copy-synth: or,1.0,1.0,1.0,1.0
+,=AVERAGE(B49:E49),=STDEV(B49:E49)
+
+copy-synth: not,0.0,na,na,1.0
+,=AVERAGE(B52:E52),=STDEV(B52:E52)
+
+synth-iso: and,0.8,1.0,1.0,0.7
+,=AVERAGE(B55:E55),=STDEV(B55:E55)
+
+synth-iso: or,0.9,0.9,1.0,1.0
+,=AVERAGE(B58:E58),=STDEV(B58:E58)
+
+synth-iso: not,1.0,1.0,0.4,1.0
+,=AVERAGE(B61:E61),=STDEV(B61:E61)
+
+synth-copy: and,0.75,0.5,1.0,0.75
+,=AVERAGE(B64:E64),=STDEV(B64:E64)
+
+synth-copy: or,1.0,0.666666666667,1.0,1.0
+,=AVERAGE(B67:E67),=STDEV(B67:E67)
+
+synth-copy: not,1.0,1.0,0.6,1.0
+,=AVERAGE(B70:E70),=STDEV(B70:E70)
+
+synth-synth: and,0.75,1.0,1.0,1.0
+,=AVERAGE(B73:E73),=STDEV(B73:E73)
+
+synth-synth: or,1.0,1.0,1.0,1.0
+,=AVERAGE(B76:E76),=STDEV(B76:E76)
+
+synth-synth: not,na,na,na,na
+,=AVERAGE(B79:E79),=STDEV(B79:E79)
+

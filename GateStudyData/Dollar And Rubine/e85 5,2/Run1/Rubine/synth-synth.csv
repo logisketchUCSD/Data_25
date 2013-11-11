@@ -1,0 +1,4 @@
+,and,or,not,% correct
+and,46,0,224,=B2*100/SUM(B2:D2)
+or,9,0,121,=C3*100/SUM(B3:D3)
+not,39,0,70,=D4*100/SUM(B4:D4)
